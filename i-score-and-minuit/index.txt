@@ -1,0 +1,29 @@
+i-score allows to remotely control "Minuit":https://github.com/Minuit/minuit compatible devices (software or hardware).
+
+<blockquote>Minuit is a query system built on top of OSC, in order to ease the communication between various applications. It allows applications to query the namespace of a distant application, its various parameters value or their attributes (ie. value range, data unit). See the "public Github repository":https://github.com/Minuit/minuit for more information.</blockquote>
+
+h3. Setting up your Minuit compatible device
+
+When opening a brand new i-score project, you first need to setup in i-score the Minuit application you want to control. Thanks to Minuit's query/reply features, this includes setting up the name of your remote application and the port it listens to.
+
+Here, we will use a "Jamoma":http://jamoma.org/download/0.6 -based Max patch (available in the examples folder) implementing the Minuit protocol.
+
+<a href="http://i-score.org/wp-content/uploads/2014/09/minuit-max-patch.png"><img src="http://i-score.org/wp-content/uploads/2014/09/minuit-max-patch-300x259.png" alt="minuit max patch" width="300" height="259" class="alignnone size-medium wp-image-484" /></a>
+
+This is a simple multimedia player providing two audio tracks (input source, an equalizer and echo) going to a mixer and output and two video tracks (input source and brightness, contrast and saturation adjustment) rendered to a window. The patch also embeds a component defining its own Minuit name: "multimediaPlayer" and a default port (9998).
+
+From the Device explorer panel, click the "Add a device" button to bring up the remote application setup window.
+
+<a href="http://i-score.org/wp-content/uploads/2014/09/adding-osc-device.png"><img class="alignnone size-medium wp-image-448" src="http://i-score.org/wp-content/uploads/2014/09/adding-osc-device.png" alt="adding osc device" width="300" height="187" /></a>
+
+Choose "Minuit" in the protocols menu. From the Device setup window, set your Minuit enabled patch name and click ok. Depending on the size of your application, the scanning of all adresses might take some time (up to 30 seconds, for a very large application).
+
+<a href="http://i-score.org/wp-content/uploads/2014/09/setup-patch.png"><img src="http://i-score.org/wp-content/uploads/2014/09/setup-patch-detail.png" alt="setup patch" width="300" height="172" class="alignnone size-medium wp-image-486" /></a>
+
+i-score Device explorer should now display all your Max patch namespace. Expand various addresses nodes to browse through your patch structure. Note that thanks to Minuit exchanges between i-score and Max, i-score automatically filled some additional informations regarding each parameter (ie. type, range...).
+
+<a href="http://i-score.org/wp-content/uploads/2014/09/minuit-namespace.png"><img src="http://i-score.org/wp-content/uploads/2014/09/minuit-namespace-detail-e1414419554648.png" alt="minuit namespace-detail" width="300" height="172" class="alignnone size-medium wp-image-487"/></a>
+
+<blockquote>
+Note that when adding a Minuit device, i-score will query all parameters and their attributes. Depending on your patch size, this may take some time.
+</blockquote>

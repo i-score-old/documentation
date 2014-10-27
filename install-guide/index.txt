@@ -1,0 +1,23 @@
+h3. OSX
+
+Download the standalone application on "the download page":http://i-score.org/download/
+
+h3. Windows
+
+Download the standalone installer on "the download page":http://i-score.org/download/
+
+h3. Linux
+
+h4. Debian and Ubuntu
+
+Download the standalone application and additional installer on "the download page":http://i-score.org/download/
+
+h4. Other Linux distros
+
+Download the source on "the download page":http://i-score.org/download/
+
+Download Score
+
+Build Score following instructions from the INSTALL file
+
+Build i-score following instructions from the INSTALL file

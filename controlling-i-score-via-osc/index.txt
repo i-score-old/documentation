@@ -1,0 +1,15 @@
+This page is still under writing. In the mean time, here is a rough reference of OSC messages that can be used to remotely control i-score.
+
+<code>/Main:Start</code>: Launch i-score scenario execution
+<code>/Main:Pause</code>: Pause i-score scenario execution
+<code>/Main:Resume</code>: Resume i-score scenario execution
+<code>/Main:End</code>: End i-score scenario execution
+<code>/Main:Goto</code>: Set start time of scenario, in milliseconds
+<code>/Main:speed</code>: Set speed of the scenario execution
+<code>/Main:Next (optionnal list)</code>: Trigger the next interactive automation box (if no argument provided) or the list of numbered trigger point
+
+<code>/'box name':Start</code>: Start automation box (named 'box name')
+<code>/'box name':Pause</code>: Pause automation box (named 'box name')
+<code>/'box name':Resume</code>: Resume automation box (named 'box name')
+<code>/'box name':End</code>: End automation box (named 'box name')
+<!-- <code>/'box name':speed</code>: Set speed of automation box (named 'box name') -->
