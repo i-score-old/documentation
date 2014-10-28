@@ -34,6 +34,8 @@ Expand your device <a href="http://i-score.org/documentation/references" target=
 
 You can then write your application's parameter address in the pop-up window.
 
+!./images/add-node-popup.png(Manually adding node)!
+
 h4. Namespace editing using learn mode
 
 Typing all your application's parameters addresses can be tedious, hence i-score provides a learn mode to automatically fill all of your device's OSC addresses. Once you set up your device as explained above, toggle the check box next to your device name to activate learn mode. As an example, here, we will send two OSC messages from a "Max":http://cycling74.com/products/max patch:
