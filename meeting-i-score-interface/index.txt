@@ -1,0 +1,45 @@
+This guide will walk you through the various component of i-score interface.
+
+The interface is made around two main parts: the Device Explorer, used to manage your distant application's parameters and the timeline where you will create and organize your temporal objects in time.
+
+h3. Timeline
+
+When starting a brand new project, i-score offers a blank score named by default "New Scenario". The name of the scenario is displayed in the timeline pane top bar. If you save your scenario on disk using <code>Save</code> from the <code>File</code> menu (cmd+s/ctl+s respectively on Mac and Windows), the name in the timeline pane top bar will be updated with the name of your scenario file.
+
+!./images/timeline.png(i-score timeline pane)!
+
+The main area is where you will create and organize temporal objects such as automations along the indicative time rule at the top. 
+
+bq. Since i-score allows to interactively trigger events, keep in mind that this time rule may not reflect real time as your scenario is executed. 
+
+Objects are created by dragging your mouse in the scenario while holding cmd/ctl (respectively on Mac and Window). See "Writing automation":writing-automations.html section for detailed explanations.
+
+This top bar also provides a transport section with the following controls:
+
+!./images/timeline-play.png(i-score transport)! play/stop the execution of your scenario
+
+!./images/timeline-rewind(i-score transport)! rewind to the start of your scenario
+
+!./images/timeline-speed(i-score transport)! live speed adjustment of your scenario execution
+
+h3. Device explorer
+
+The Device explorer allows to navigate through the various parameters of your distant application and select/unselect the parameter whose values will be stored in an object on the timeline.
+
+!./images/deviceexplorer.png(i-score Device explorer)!
+
+The Device explorer pane can be hidden/displayed by toggling the Device explorer entry in the View menu (cmd+e/ctl+e respectively on Mac and Windows). It can also be moved in a seperate window by clicking the top-left button in i-score's main window. To attach it back to i-score main window, slide the Device explorer window to the left or right side of the timeline pane.
+
+!./images/deviceplorer-move.png(Device explorer mover)!
+
+h4. Basic components (exploring your application ?)
+
+The Device explorer displays a structured list of all parameters of a distant application loaded as an i-score device (See "Using i-score with osc applications":./i-score-and-osc.html and "Using i-score with Minuit applications":./i-score-and-minuit.html for detailed explanations).
+
+node like
+
+param type
+
+column
+
+h4.Advanced settings
