@@ -1,0 +1,16 @@
+h3. General
+
+cmd+n/ctl+n: Create a new scenario
+cmd+o/ctl+o: Open a scenario file
+cmd+s/ctl+s: Save scenario to disk
+cmd+shift+s/ctl+shift+s: Save scenario to disk as a new file
+cmd+p/ctl+p: Print scenario
+
+h3. Timeline
+
+cmd++/ctl++: Horizontaly zoom in
+cmd+-/ctl+-: Horizontaly zoom out
+
+cmd+click & drag/ctl+click & drag: Create object on the timeline
+
+mousewheel: Horizontaly zoom in/out
