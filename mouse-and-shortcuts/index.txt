@@ -14,3 +14,7 @@ cmd+-/ctl+-: Horizontaly zoom out
 cmd+click & drag/ctl+click & drag: Create object on the timeline
 
 mousewheel: Horizontaly zoom in/out
+
+h3. Boxes
+
+cmd+click & drag/ctl+click & drag: free handwritting of automation curve
