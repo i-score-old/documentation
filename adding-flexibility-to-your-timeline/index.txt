@@ -1,6 +1,7 @@
 i-score is specifically designed for interactive scenarios, whether it is for live performance or for interactive art installation, for instance. Thus it provides a number of way to interactively use your timeline and control its execution live.
 
 h3. Global control of execution
+
 By default, i-score execution works in a similar way to most digital audio or video workstations: automation boxes are played as the playhead run across the timeline. In the screenshot below, you can see that each automation box has its own progress bar displaying where the playhead is in the automation.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/simple-playing.png"><img src="http://i-score.org/wp-content/uploads/2014/09/simple-playing-detail.png" alt="simple playing-detail" width="300" height="230" class="aligncenter size-medium wp-image-603" /></a>
@@ -20,9 +21,7 @@ As of version 0.2.1, the speed of each box can only be <a href="http://i-score.o
 
 h3. Interactive triggering of automation
 
-So far we saw that the triggering is done according to the position of the automation boxes in the timeline: the automation start as the global playhead crosses its start point. Simple.
-
-However, when writing your interactive scenario, there are some cases where you want a specific automation to run at some point but cannot know when. For example, when writing the scenario of an interactive art installation, you know that an automation will start playing whenever a visitor enters the exhibition space or passes by a sensor, but you can not know when he will do so. To help with that, i-score let you set that an automation box will be triggered interactively. We can add a "trigger point" to a box by clicking one of the handle at the box's top corners as illustrated below.
+When writing your interactive scenario, there are some cases where you want a specific automation to run at some point but cannot know when. For example, when writing the scenario of an interactive art installation, you know that an automation will start playing whenever a visitor enters the exhibition space or passes by a sensor, but you can not know when he will do so. To help with that, i-score let you set that an automation box will be triggered interactively. We can add a "trigger" to a box by clicking one of the handle at the box's top corners as illustrated below.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point-detail-300x259.png" alt="adding trigger point-detail" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
@@ -33,3 +32,6 @@ When done, the automation box display a flag at its corner (start point, in our 
 As illustrated in the video below, when playing our scenario, the interactive automation box flag turns green when it is ready to be triggered until it is started by a mouse click or when receiving the OSC message displayed above the box (<code>/'box name'/start</code>. When playing, the interactive automation box's flag turns red until it is done.
 
 [video width="720" height="405" mp4="http://i-score.org/wp-content/uploads/2014/09/interactive-triggering.mp4"][/video]
+
+h4. Conditionning triggering
+
