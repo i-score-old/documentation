@@ -33,5 +33,26 @@ As illustrated in the video below, when playing our scenario, the interactive au
 
 [video width="720" height="405" mp4="http://i-score.org/wp-content/uploads/2014/09/interactive-triggering.mp4"][/video]
 
-h4. Conditionning triggering
+h4. Conditioning triggering
 
+Interactive triggering of automations can be further refined by combining triggers and intervals. When boxes are made interactive, automations can be triggered as soon as the scenario start being played. However, using intervals between automation boxes allows to set when an automation will be ready for triggering or if it should trigger automatically after a certain amount of time for example. As an example, we will set an interval between the start event of a box named @Box.2@ and the start event of an interactive box named @Box.3@. If you start playing your scenario, you will notice that the trigger button turns red and the automation can not be triggered manually or using an OSC message until i-score playhead crosses start event of @Box.2@. Once i-score's playhead crosses the beginning of @Box.2@, @Box.3@'s trigger button will turn green, meaning that the automation can be triggered. See both behaviour as illustrated below.
+
+<a href="./images/cond-triggering.png"><img src="./images/cond-triggering-detail.png" alt="Non intervalled triggering" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+
+<a href="./images/cond-triggering2.png"><img src="./images/cond-triggering2-detail.png" alt="Non intervalled triggering" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+
+You may however want to go a step further by preventing from triggering @Box.3@'s automation until a certain amount of time. For example, @Box.2@ may load some media files but you would like to introduce a delay before being able to trigger @Box.3@'s automation so you are sure that the loading is properly done. Such a delay can be introduced by clicking the angle of the interval connection and dragging your mouse until you reach the desired length. You will see that the interval connection now displays a full line up to the minimum bound you just defined.
+
+<a href="./images/min-bound.png"><img src="./images/min-bound-detail.png" alt="Min bounded interval" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+
+On the opposite, you may want to force an automation to trigger after a certain amount of time. For example, if our @Box.2@ is reading an audio or video file that is to be faded out by the automation contained in @Box.3@, you will want to make sure that such a fade out is being made before the end of the file so it ends gracefully.
+
+Interval maximum bound can be added by double-clicking on the dotted part of the connection. This bring a maximum bound handle at the start event of the interactive box as illustrated below.
+
+<a href="./images/max-bound.png"><img src="./images/max-bound-detail.png" alt="Max bounded interval" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+
+You can now click the handle and drag it to the right until your reach the desired amount of time.
+
+<a href="./images/max-bound2.png"><img src="./images/max-bound2-detail.png" alt="Max bounded interval" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+
+bq. When editing your scenario, note that interval bounded with minimum and maximum values also affects moving interactive boxes along the timeline. Interactive boxes can be moved freely along the dotted part of the interval connection but will start pushing other linked boxes as you reach one of the bounds.
