@@ -51,13 +51,21 @@ When controlling applications that can only receive parameter's value, we can ho
 
 As an example, we will manually add some automation values for the pan value of our audio track 1.
 
-Once created a box as explained above, browse the Device explorer until you reach the following address:
+Once having created a box as explained above, browse the Device explorer until you reach the following address:
 
 <code>/mediaPlayer/audio/track.1/input/balance/position</code>
 
 Rather than checking the start and end boxes, we will enter some values in the dedicated fields as shown below.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values.png"><img src="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values-detail-300x123.png" alt="manually setting values-detail" width="300" height="123" class="aligncenter size-medium wp-image-563" /></a>
+
+h3. Recording automations
+
+i-score allows to record incoming parameter's value into automation box. To do so, once selected the automation box to store value recording, navigate to the desired parameter address in the Device explorer and click on the interpolation check box while holding the cmd/ctl key down, respectively on Mac and Windows. You will see that the check box turned into a "recording" icon and the selected automation box is highlited in red. Now if you start playing your scenario, all incoming values as the box get played will be recorded as an automation.
+
+Note that you may arm recording for many parameters at once.
+
+<a href="./images/recording.png"><img src="./images/recording-detail.png" width="300" height="123" class="aligncenter size-medium wp-image-563" /></a>
 
 h3. Editing automations
 
@@ -67,6 +75,8 @@ From the box top-bar, select the parameter interpolation you want to edit from t
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/editing-interpolation.png"><img src="http://i-score.org/wp-content/uploads/2014/09/editing-interpolation-detail-300x150.png" alt="editing interpolation-detail" width="300" height="150" class="aligncenter size-medium wp-image-557" /></a>
 
+h4. Break Point Function editing
+
 Point can be added to the default function by clicking in the box. Note that you can delete existing point by alt-clicking a point.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/drawing-bpf.png"><img src="http://i-score.org/wp-content/uploads/2014/09/drawing-bpf-detail-300x212.png" alt="drawing bpf-detail" width="300" height="212" class="aligncenter size-medium wp-image-559" /></a>
@@ -75,4 +85,10 @@ You can also add to each segment of the break point function a curve factor. For
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/curve-factor.png"><img src="http://i-score.org/wp-content/uploads/2014/09/curve-factor-detail-300x212.png" alt="curve factor-detail" width="300" height="212" class="aligncenter size-medium wp-image-561" /></a>
 
-You are now read to write some nice automations to control your favorite applications !
+h4. Free curve drawing
+
+You can also write a custom interpolation curve by drawing inthe automation box. When having selected the parameter interpolation to edit as explained above, hold down the cmd/ctl key (respectively on Mac and Windows) and drag your mouse in the automation box. As you hover the box while holding the cmd/ctl key down, you will notice that the mouse cursor changes into a pen. You can now draw a curve as desired.
+
+!./images/freehand.png(Free curve drawing)!
+
+You are now ready to write some nice automations to control your favorite applications !
