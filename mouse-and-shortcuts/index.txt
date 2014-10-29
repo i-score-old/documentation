@@ -18,3 +18,7 @@ mousewheel: Horizontaly zoom in/out
 h3. Boxes
 
 cmd+click & drag/ctl+click & drag: free handwritting of automation curve
+
+h3. Device explorer
+
+cmd+click/ctl+click: clikcing the interpolation checkbox while holding the cmd/ctl key down activate recording of incoming parameter's value
