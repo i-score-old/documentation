@@ -1,6 +1,6 @@
 This guide will walk you through the various component of i-score interface.
 
-The interface is made around two main parts: the Device Explorer, used to manage your distant application's parameters and the timeline where you will create and organize your temporal objects in time.
+The interface is made around two main parts: the Device Explorer, used to navigate and manage your distant application's parameters and the timeline where you will create and organize your temporal objects in time.
 
 h3. Timeline
 
@@ -8,9 +8,9 @@ When starting a brand new project, i-score offers a blank score named by default
 
 !./images/timeline.png(i-score timeline pane)!
 
-The main area is where you will create and organize temporal objects such as automations along the indicative time rule at the top. 
+The main area is where you will create and organize vairous objects such as automations boxes along the indicative time rule at the top. 
 
-bq. Since i-score allows to interactively trigger events, keep in mind that this time rule may not reflect real time as your scenario is executed. 
+<!-- bq. Since i-score allows to interactively trigger events, keep in mind that this time rule may not reflect real time as your scenario is executed.  -->
 
 Objects are created by dragging your mouse in the scenario while holding cmd/ctl (respectively on Mac and Window). See "Writing automation":writing-automations.html section for detailed explanations.
 
@@ -18,9 +18,9 @@ This top bar also provides a transport section with the following controls:
 
 !./images/timeline-play.png(i-score transport)! play/stop the execution of your scenario
 
-!./images/timeline-rewind(i-score transport)! rewind to the start of your scenario
+!./images/timeline-rewind.png(i-score transport)! rewind to the start of your scenario
 
-!./images/timeline-speed(i-score transport)! live speed adjustment of your scenario execution
+!./images/timeline-speed.png(i-score transport)! adjust speed of your scenario in real time
 
 h3. Device explorer
 
@@ -30,16 +30,51 @@ The Device explorer allows to navigate through the various parameters of your di
 
 The Device explorer pane can be hidden/displayed by toggling the Device explorer entry in the View menu (cmd+e/ctl+e respectively on Mac and Windows). It can also be moved in a seperate window by clicking the top-left button in i-score's main window. To attach it back to i-score main window, slide the Device explorer window to the left or right side of the timeline pane.
 
-!./images/deviceplorer-move.png(Device explorer mover)!
+!./images/deviceexplorer-move.png(Device explorer mover)!
 
 h4. Basic components (exploring your application ?)
 
 The Device explorer displays a structured list of all parameters of a distant application loaded as an i-score device (See "Using i-score with osc applications":./i-score-and-osc.html and "Using i-score with Minuit applications":./i-score-and-minuit.html for detailed explanations).
 
-node like
+Each node in a parameter address is displayed as a name and a grey arrow. This arrow lets you expand/collapse the various levels or your application parameters. In the illustration below, we can see that the OSCdevice has the following parameters:
 
-param type
+bc. /parent/topParameter.1
+/parent/topParameter.2
+/parent/child.1/myParameter
+/parent/child.1/anotherParameter
+/parent/child.2/myParameter
+/parent/child.2/anotherParameter
 
-column
+!./images/nodes.png(Structured list of parameters)!
 
-h4.Advanced settings
+<!--TODO should we use Jamoma's model ? Param/mess/returns ? -->
+Each parameter can be of 3 different types:
+
+- bidirectionnal: a distant application's parameter can be set and get from i-score
+- receiver: a distant application's parameter can be set from i-score
+- sender: a distant application's parameter can be get form i-score
+
+Note that in the Device explorer pane, receivers and senders are respectively displayed as light grey italic text and black italic text.
+
+<!-- For example, in the illustration below, the preset address under the audio node of the mediaPlayer device is a method allowing to recall a preset setting, while audio/track.1/input/soundfile/report is a message sent from the distant application when the sounfile being played reaches its end. -->
+The Device explorer pane provides two columns named "Start" and "End". For each parameter of the device, these columns display start and end values of an automation box. A double-click in the cell brings a textfield allowing to manually set start and/or end value.
+
+<a href="./images/startend-col.png"><img src="./images/startend-col-detail.png" width="300" height="150" class="aligncenter size-medium wp-image-557" /></a>
+
+Both Start and End columns are precedeed by a column named "v" containing checkboxes. These allow to set whether a parameter value will be respectively stored as a box's start or end.
+
+Finally, the column named "~" is use to set whether i-score will draw an interpolation between start and end values of an automation box.
+
+h4. Advanced settings
+
+Some additionnal settings can be accessed by widening the Device explorer pane (when the Device explorer pane is attached to i-score main window, grab its right border and slide it to the right).
+
+!./images/deviceexplorer-column.png(Device explorer advanced settings)!
+
+The first column named "=" set whether repeted values will get filtered out (default) when playing an automation.
+
+Column named "%" allows to define the rate at which values will get sent by i-score. Time between two values is given as milliseconds.
+
+"Type" column displays a symbol depending on the type of the parameter: bidirectionnal (@<->@), receiver (@->@) or sender (@<-@).
+
+Finally, "min" and "max" column display some optional minimum and maximum values for the parameter, as defined in the namespace file of your device (ie. for OSC devices) or as queried by i-score (ie. for Minuit devices).
