@@ -1,6 +1,6 @@
 This guide will walk you through the various component of i-score interface.
 
-The interface is made around two main parts: the Device Explorer, used to navigate and manage your distant application's parameters and the timeline where you will create and organize your temporal objects in time.
+The interface is made around two main parts: the Device Explorer, used to navigate and manage your distant application's parameters and the timeline where you will create and organize your automations in time.
 
 h3. Timeline
 
@@ -8,7 +8,7 @@ When starting a brand new project, i-score offers a blank score named by default
 
 !./images/timeline.png(i-score timeline pane)!
 
-The main area is where you will create and organize vairous objects such as automations boxes along the indicative time rule at the top. 
+The main area is where you will create and organize various objects such as automations boxes along the indicative time rule at the top. 
 
 <!-- bq. Since i-score allows to interactively trigger events, keep in mind that this time rule may not reflect real time as your scenario is executed.  -->
 
