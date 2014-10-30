@@ -6,7 +6,9 @@ To ease this work, i-score provides ways to set relationships between related ev
 
 h3. Setting fixed-duration intervals
 
-First kind of interval between boxes that can be defined is a fixed-length interval. This ensures that a certain amount of time will be maintained between two events. For instance, let say we want to play a 2 seconds audio file at the end of a box automation and start the next box automation only when the file is at the end. Hence, setting a 2 seconds fixed interval between two boxes will ensure that when moving a box, the scenario is still functionnal (in that case, that there is no gap or cut in the soundfile being played). Assuming we want to set a interval between the end of <code>Box.2</code> and the beginning of <code>Box.3</code>, we can click the handle on Box.2's right side and drag a link up to the handle in Box.3's side as shown below.
+First kind of interval between boxes that can be defined is a fixed-length interval. This ensures that a certain amount of time will be maintained between two events. For instance, you may want to ensure that some video files get properly loaded or that a curtain on stage is drawn before starting automations stored in @Box.3@. Hence, setting a 2 seconds fixed interval between two boxes will ensure that when moving a box, the time between two automations is preserved, thus the scenario is still functionnal. 
+
+Assuming we want to set a interval between the end of <code>Box.2</code> and the beginning of <code>Box.3</code>, we can click the handle on Box.2's right side and drag a link up to the handle in Box.3's side as shown below.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/dragging-link.png"><img src="http://i-score.org/wp-content/uploads/2014/09/dragging-link-detail.png" alt="dragging link-detail" class="aligncenter size-medium wp-image-584" /></a>
 
@@ -24,7 +26,7 @@ Intervals can be established from a box end point to a box's start point, but al
 
 h3. Setting flexible intervals
 
-You can also set intervals of variable/undefined time between boxes. When setting flexible intervals, you will be able to move automation boxes freely along the timeline as long as the order defined by the interval is preserved. When reaching a point where the order is put in conflict, i-score will move bounded boxes in order to maintain the defined order.
+You can also set intervals of variable/undefined time between boxes. When setting flexible intervals, you will be able to move automation boxes freely along the timeline as long as the order defined by the interval is preserved. That is, if @Box.2@'s end event reaches @Box.3@'s start event, rather than letting automation boxes overlap, i-score will push @Box.3@ along the timeline. This makes i-score very useful to fine tune times of intervals between events while ensuring that the logical continuity of your scenario is at safe.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/flexible-relation.png"><img src="http://i-score.org/wp-content/uploads/2014/09/flexible-relation-detail.png" alt="flexible relation-detail" class="alignnone size-medium wp-image-593" /></a>
 
