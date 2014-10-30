@@ -10,9 +10,9 @@ When starting a brand new project, i-score offers a blank score named by default
 
 The main area is where you will create and organize various objects such as automations boxes along the indicative time rule at the top. 
 
-<!-- bq. Since i-score allows to interactively trigger events, keep in mind that this time rule may not reflect real time as your scenario is executed.  -->
-
 Objects are created by dragging your mouse in the scenario while holding cmd/ctl (respectively on Mac and Window). See "Writing automation":writing-automations.html section for detailed explanations.
+
+bq. Please note that as of version 0.2.2, i-score does not support copy, paste, duplicate, undo facilities. These features and related shortcuts will be available in future versions
 
 This top bar also provides a transport section with the following controls:
 
@@ -38,7 +38,7 @@ The Device explorer displays a structured list of all parameters of a distant ap
 
 Each node in a parameter address is displayed as a name and a grey arrow. This arrow lets you expand/collapse the various levels or your application parameters. In the illustration below, we can see that the OSCdevice has the following parameters:
 
-bc. /parent/topParameter.1
+bq. /parent/topParameter.1
 /parent/topParameter.2
 /parent/child.1/myParameter
 /parent/child.1/anotherParameter
@@ -47,7 +47,6 @@ bc. /parent/topParameter.1
 
 !./images/nodes.png(Structured list of parameters)!
 
-<!--TODO should we use Jamoma's model ? Param/mess/returns ? -->
 Each parameter can be of 3 different types:
 
 - bidirectionnal: a distant application's parameter can be set and get from i-score
