@@ -1,0 +1,13 @@
+When working on a large project, there may be a point where setting intervals between a number of automation boxes can be tedious when adjusting your scenario. For example, when writting the scenario of a whole live performance, you will most likely have a number of automations written through the various scene of your scenario. Thus you may want to group automations belonging to a particular scene so you can manage them as a whole. Hence i-score let you write sub-scenarios in a given box.
+
+bq. As of version 0.2.2 sub-scenario offer the same set of features as working in the main timeline. However, upcoming versions of i-score will bring some advanced features to sub-scenario such as the ability to loop sub-scenarios.
+
+In order to start working on a sub-scenario, you first need to create a regular automation box. Then from its top-bar menu, select "Scenario".
+
+<a href="./images/selecting-scenario.png"><img src="./images/selecting-scenario-detail.png" alt="complexity-detail" class="aligncenter wp-image-582" /></a>
+
+You can then create somes boxes using cmd+drag or ctl+drag respectively on Mac and Windows and feed them some content as explained in "previous tutorials":./writing-automations.html.
+
+<a href="./images/drawingsubox.png"><img src="./images/drawingsubox-detail.png" alt="complexity-detail" class="aligncenter wp-image-582" /></a>
+
+All boxes created in a sub-scenario depend on the box that contains them. Hence, note that when moving the parent box along the timeline, all boxes in the sub-scenario are moved accordingly.
