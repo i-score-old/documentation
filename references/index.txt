@@ -1,0 +1,7 @@
+*(#box) *Box:* Boxes define a process (ie. an interpolation) between two events (a start point and an end point)
+*(#device) *Device:* A local or distant software or hardware piece that you want to interact with i-score
+*(#event) *Event:* A date in the timeline pointing to a state
+*(#namespace) *Namespace:* A tree-like structure describing your remote application's parameters
+*(#state) *State:* A group of parameters name and value
+
+
