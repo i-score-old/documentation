@@ -2,7 +2,7 @@ When writing your interactive scenario, there are some cases where you want a sp
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point-detail-300x259.png" alt="adding trigger point-detail" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
-When done, the automation box display a flag at its corner (start point, in our case). Now when playing our scenario, the automation will not start as the global playhead crosses its start point and will have to be triggered dynamically.
+When done, the automation box displays a flag at its corner (start event, in our case). Now when playing our scenario, the automation will not start as the global playhead crosses its start event and will have to be triggered dynamically.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/interactive-automation-box.png"><img src="http://i-score.org/wp-content/uploads/2014/09/interactive-automation-box-detail-300x269.png" alt="interactive automation box-detail" width="300" height="269" class="aligncenter size-medium wp-image-616" /></a>
 

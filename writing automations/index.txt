@@ -1,12 +1,10 @@
 In this tutorial, we will see how to create events and automations in i-score. Assuming you have already "set up some devices":http://i-score.org/documentation/iscore-and-minuit in i-score Device explorer, you are now ready to start writing your own scenario. Here we will use i-score to control a Max patch built using the "Jamoma":http://jamoma.org/download/0.6 framework through the Minuit protocol, as set tup in the "Minuit setup tutorial page":http://i-score.org/documentation/iscore-and-minuit. You can find this patch from the Examples folder. In order to get this example work, be sure to setup your device as explained in the Minuit tutorial and set @mediaPlayer@ as the name of your device.
 
-Events in i-score are set in the timeline as a box containing a start point and an end point. First we need to create a placeholder box that will contain the parameters from our distant application that we want to control.
-
 In the timeline panel, draw an empty box using cmd+drag (on Mac) or ctrl-drag (on Win and Linux). 
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/drawing-box.png"><img src="http://i-score.org/wp-content/uploads/2014/09/drawing-box-detail-300x186.png" alt="drawing box-detail" width="300" height="186" class="aligncenter size-medium wp-image-533" /></a>
 
-When done, you can freely move the box in i-score timeline and adjust its start time and duration. For example, we will want our box to start playing at 0 min 1 sec. and stop at 0 min. 5 sec. You can move the box by clicking its top bar and adjust its duration by dragging its lower right corner as shown below.
+When done, you can freely move the box in i-score's timeline and adjust its start time and duration. For example, we will want our box to start playing at 0 min 1 sec. and stop at 0 min. 5 sec. You can move the box by clicking its top bar and adjust its duration by dragging its lower right corner as shown below.
 
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/ajusting-start-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/asjusting-start-point-detail-300x249.png" alt="asjusting start point-detail" width="300" height="249" class="aligncenter size-medium wp-image-532" /></a>
@@ -25,11 +23,11 @@ Then from the Device explorer panel, deploy the various nodes of our Patch names
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/selecting-parameters.png"><img src="http://i-score.org/wp-content/uploads/2014/09/selecting-parameters-detail-275x300.png" alt="selecting parameters-detail" width="275" height="300" class="aligncenter size-medium wp-image-535" /></a>
 
-You can then click the checkbox beside our gain parameter to store its current value at the box's start point. You can see that our parameter value was automatically grabbed from our Max patch and is displayed in the field next the checkbox. Moreover, this new content is symbolized in the box by a grey shade at the box side.
+You can then click the checkbox beside our gain parameter to store its current value at the box's start event. You can see that our parameter value was automatically grabbed from our Max patch and is displayed in the field next the checkbox. Moreover, this new content is symbolized in the box by a grey shade at the box side.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adding-start-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-start-point-detail.png" alt="adding start point" width="300" height="187" class="aligncenter size-medium wp-image-528" /></a>
 
-From the Max patch GUI, set the Master gain slider of the input module to 100, then store that value as an end point for <code>Box.2</code>. From i-score's Device explorer, click the end checkbox next to our gain parameter. Again, the value we just stored is displayed in the textfield beside the checkbox and as a shade of grey at the box's right side.
+From the Max patch GUI, set the Master gain slider of the input module to 100, then store that value at the end event of <code>Box.2</code>. From i-score's Device explorer, click the end checkbox next to our gain parameter. Again, the value we just stored is displayed in the textfield beside the checkbox and as a shade of grey at the box's right side.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adding-end-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-end-point-detail-300x146.png" alt="adding end point-detail" width="300" height="146" class="aligncenter size-medium wp-image-525" /></a>
 
@@ -37,7 +35,7 @@ If you play our scenario, you should see the GUI being updated as i-score goes t
 
 <blockquote class="tip">Note that boxes can be played individually by clicking the play button in the box top-bar. This can be useful if you want to quickly check the automation you just wrote.</blockquote>
 
-You can now add more content to this box by selecting other parameters from the Device explorer and checking the start and end point boxes. Note that you can "select a group of parameters in a single click":http://i-score.org/documentation/meeting-i-score-interface.
+You can now add more content to this box by selecting other parameters from the Device explorer and checking the start and end event boxes. Note that you can "select a group of parameters in a single click":http://i-score.org/documentation/meeting-i-score-interface.
 
 <blockquote class="tip">
 If you want to remove some parameters from a box, select the parameter in the Device explorer and toggle off the checkbox or press the backspace key.
@@ -45,7 +43,7 @@ If you want to remove some parameters from a box, select the parameter in the De
 
 h3. Manually adding content
 
-When checking a start or end point box, i-score automatically grabs the parameter's current value. This is really convenient as it allows to adjust the various parameters of your distant application live and then make a snapshot of its current state. However, this assumes a bi-directionnal communication between i-score and your controlled application. 
+When checking a start or end event box, i-score automatically grabs the parameter's current value. This is really convenient as it allows to adjust the various parameters of your distant application live and then make a snapshot of its current state. However, this assumes a bi-directionnal communication between i-score and your controlled application. 
 
 When controlling applications that can only receive parameter's value, we can however manually set some values in our box.
 
@@ -69,7 +67,7 @@ Note that you may arm recording for many parameters at once.
 
 h3. Editing automations
 
-When setting a parameter's start and end value in a box, i-score will automatically create an interpolation bewteen the two defined points. Of course, you can edit this default interpolation and further refine your automation.
+When setting a parameter's start and end value in a box, i-score will automatically create an interpolation bewteen the two defined values. Of course, you can edit this default interpolation and further refine your automation.
 
 From the box top-bar, select the parameter interpolation you want to edit from the drop-down menu. The interpolation function is now displayed at the box foreground.
 
@@ -77,11 +75,11 @@ From the box top-bar, select the parameter interpolation you want to edit from t
 
 h4. Break Point Function editing
 
-Point can be added to the default function by clicking in the box. Note that you can delete existing point by alt-clicking a point.
+Points can be added to the default function by clicking in the box. Note that you can delete existing point by alt-clicking a point.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/drawing-bpf.png"><img src="http://i-score.org/wp-content/uploads/2014/09/drawing-bpf-detail-300x212.png" alt="drawing bpf-detail" width="300" height="212" class="aligncenter size-medium wp-image-559" /></a>
 
-You can also add to each segment of the break point function a curve factor. For this, shift+click  on a point and drag your mouse upward ou downward.
+You can also add to each segment of the break point function a curve factor. For this, shift+click on a point and drag your mouse upward ou downward.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/curve-factor.png"><img src="http://i-score.org/wp-content/uploads/2014/09/curve-factor-detail-300x212.png" alt="curve factor-detail" width="300" height="212" class="aligncenter size-medium wp-image-561" /></a>
 
