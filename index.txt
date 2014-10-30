@@ -1,0 +1,23 @@
+h3. Introduction
+
+* "Introduction to i-score":introduction.html
+* "Meeting i-score interface":meeting-i-score-interface.html
+
+h3. Setting up i-score with distant applications
+
+* "Using i-score with OSC":i-score-and-osc.html
+* "Using i-score with Minuit":i-score-and-minuit.html
+
+h3. Using i-score
+
+* "Writing automations":writing-automations.html
+* "Setting intervals between events":setting-intervals-between-events.html
+* "Controlling execution":global-control-of-execution.html
+* "Interactive triggering of events":interactive-triggering.html
+* "Working with subscenarios":working-with-sub-scenarios.html
+
+h3. Extras
+
+* "Controlling i-score using OSC":controlling-i-score-via-osc.html
+* "Actions and shortcuts":mouse-and-shortcuts.html
+* "References":mouse-and-shortcuts.html
