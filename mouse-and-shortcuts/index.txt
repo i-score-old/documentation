@@ -5,6 +5,7 @@ cmd+o/ctl+o: Open a scenario file
 cmd+s/ctl+s: Save scenario to disk
 cmd+shift+s/ctl+shift+s: Save scenario to disk as a new file
 cmd+p/ctl+p: Print scenario
+cmd+e/ctl+e: toggling Device explorer panel
 
 h3. Timeline
 
