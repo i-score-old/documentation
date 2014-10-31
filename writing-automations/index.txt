@@ -13,23 +13,29 @@ When done, you can freely move the box in i-score's timeline and adjust its star
 
 h3. Manually adding content
 
-When controlling applications that can only receive parameter's value, we can manually set some values in our box.
+We can manually set some values in our box. This is especially useful for application with no option to echo back their state.
 
-As an example, we will add some automation values for the pan value of an audio track 1.
+As an example, we will add some automation values for the pan value of the first audio of an application.
 
 Once having created a box as explained above, browse the Device explorer until you reach the desired address. ie :
 
 <code>/mediaPlayer/audio/track.1/input/balance/position</code>
 
-We can enter some values in the dedicated fields as shown below.
+If you double-click in the start of end cell, you see that the cell brings a textfield. You can then enter some values to be used as the start event and end event of the automation box. 
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values.png"><img src="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values-detail-300x123.png" alt="manually setting values-detail" width="300" height="123" class="aligncenter size-medium wp-image-563" /></a>
+
+Content added to a start or end event is symbolized in the box by a grey shade at the box side.
+
+!./images/boxshade.png(Box shade)!
+
+When entering both values, you that i-score automatically created an interpolation in the automation box. Also notice that the check box in the interpolation column got checked. You can now add other parameters values for this automation box or create other boxes in your scenario.
 
 <blockquote class="tip">Note that boxes can be played individually by clicking the play button in the box top-bar. This can be useful if you want to quickly check the automation you just wrote.</blockquote>
 
 h3. Automatic content addition
 
-When working with an application echoing back its value changes to i-score, storing some parameters value into event can be done automatically.
+When working with an application echoing back its value to i-score, storing some parameters value into an event can be done automatically.
 
 Here we will use i-score to control a Max patch built using the "Jamoma":http://jamoma.org/download/0.6 framework through the Minuit protocol, as setup in the "Minuit setup tutorial page":http://i-score.org/documentation/iscore-and-minuit. You can find this patch from the Examples folder. In order to get this example work, be sure to setup your device as explained in the Minuit tutorial and set @mediaPlayer@ as the name of your device.
 
@@ -43,11 +49,11 @@ Then from the Device explorer panel, deploy the various levels of our Patch para
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/selecting-parameters.png"><img src="http://i-score.org/wp-content/uploads/2014/09/selecting-parameters-detail-275x300.png" alt="selecting parameters-detail" width="275" height="300" class="aligncenter size-medium wp-image-535" /></a>
 
-You can then click the checkbox beside our gain parameter to store its current value at the box's start event. You can see that our parameter value was automatically grabbed from our Max patch and is displayed in the field next the checkbox. Moreover, this new content is symbolized in the box by a grey shade at the box side.
+You can then click the checkbox beside our gain parameter to store its current value at the box's start event. You can see that our parameter value was automatically grabbed from our Max patch and is displayed in the field next the checkbox. Again, the value is symbolized as a shade of grey at the box's side.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adding-start-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-start-point-detail.png" alt="adding start point" width="300" height="187" class="aligncenter size-medium wp-image-528" /></a>
 
-From the Max patch GUI, set the Master gain slider of the input module to 100, then store that value at the end event of <code>Box.2</code>. From i-score's Device explorer, click the end checkbox next to our gain parameter. Again, the value we just stored is displayed in the textfield beside the checkbox and as a shade of grey at the box's right side.
+From the Max patch GUI, set the Master gain slider of the input module to 100, then store that value at the end event of <code>Box.2</code>. From i-score's Device explorer, click the end checkbox next to our gain parameter. 
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adding-end-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-end-point-detail-300x146.png" alt="adding end point-detail" width="300" height="146" class="aligncenter size-medium wp-image-525" /></a>
 
