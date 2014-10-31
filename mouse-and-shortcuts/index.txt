@@ -1,25 +1,25 @@
 h3. General
 
-cmd+n/ctl+n: Create a new scenario
-cmd+o/ctl+o: Open a scenario file
-cmd+s/ctl+s: Save scenario to disk
-cmd+shift+s/ctl+shift+s: Save scenario to disk as a new file
-cmd+p/ctl+p: Print scenario
-cmd+e/ctl+e: toggling Device explorer panel
+* *cmd+n/ctl+n:* Create a new scenario
+* *cmd+o/ctl+o:* Open a scenario file
+* *cmd+s/ctl+s:* Save scenario to disk
+* *cmd+shift+s/ctl+shift+s:** Save scenario to disk as a new file
+* *cmd+p/ctl+p:* Print scenario
+* *cmd+e/ctl+e:* toggling Device explorer panel
 
 h3. Timeline
 
-cmd++/ctl++: Horizontaly zoom in
-cmd+-/ctl+-: Horizontaly zoom out
+* *cmd++/ctl++:* Horizontaly zoom in
+* *cmd+-/ctl+-:* Horizontaly zoom out
 
-cmd+click & drag/ctl+click & drag: Create object on the timeline
+* **cmd+click & drag/ctl+click & drag:* Create object on the timeline
 
 mousewheel: Horizontaly zoom in/out
 
 h3. Boxes
 
-cmd+click & drag/ctl+click & drag: free handwritting of automation curve
+* **cmd+click & drag/ctl+click & drag:* free handwritting of automation curve
 
 h3. Device explorer
 
-cmd+click/ctl+click: clikcing the interpolation checkbox while holding the cmd/ctl key down activate recording of incoming parameter's value
+* **cmd+click/ctl+click:* clikcing the interpolation checkbox while holding the cmd/ctl key down activate recording of incoming parameter's value
