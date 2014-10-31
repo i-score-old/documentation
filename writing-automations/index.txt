@@ -1,4 +1,4 @@
-In this tutorial, we will see how to create events and automations in i-score. Assuming you have already "set up some devices":http://i-score.org/documentation/iscore-and-minuit in i-score Device explorer, you are now ready to start writing your own scenario. Here we will use i-score to control a Max patch built using the "Jamoma":http://jamoma.org/download/0.6 framework through the Minuit protocol, as set tup in the "Minuit setup tutorial page":http://i-score.org/documentation/iscore-and-minuit. You can find this patch from the Examples folder. In order to get this example work, be sure to setup your device as explained in the Minuit tutorial and set @mediaPlayer@ as the name of your device.
+In this tutorial, we will see how to create events and automations in i-score. Assuming you have already set up some devices in i-score Device explorer, you are now ready to start writing your own scenario. 
 
 In the timeline panel, draw an empty box using cmd+drag (on Mac) or ctrl-drag (on Win and Linux). 
 
@@ -11,13 +11,33 @@ When done, you can freely move the box in i-score's timeline and adjust its star
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adjusting-size-box.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adjusting-size-box-detail1-300x205.png" alt="adjusting size box-detail" width="300" height="205" class="aligncenter size-medium wp-image-537" /></a>
 
-h4. Automatic content addition
+h3. Manually adding content
+
+When controlling applications that can only receive parameter's value, we can manually set some values in our box.
+
+As an example, we will add some automation values for the pan value of an audio track 1.
+
+Once having created a box as explained above, browse the Device explorer until you reach the desired address. ie :
+
+<code>/mediaPlayer/audio/track.1/input/balance/position</code>
+
+We can enter some values in the dedicated fields as shown below.
+
+<a href="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values.png"><img src="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values-detail-300x123.png" alt="manually setting values-detail" width="300" height="123" class="aligncenter size-medium wp-image-563" /></a>
+
+<blockquote class="tip">Note that boxes can be played individually by clicking the play button in the box top-bar. This can be useful if you want to quickly check the automation you just wrote.</blockquote>
+
+h3. Automatic content addition
+
+When working with an application echoing back its value changes to i-score, storing some parameters value into event can be done automatically.
+
+Here we will use i-score to control a Max patch built using the "Jamoma":http://jamoma.org/download/0.6 framework through the Minuit protocol, as setup in the "Minuit setup tutorial page":http://i-score.org/documentation/iscore-and-minuit. You can find this patch from the Examples folder. In order to get this example work, be sure to setup your device as explained in the Minuit tutorial and set @mediaPlayer@ as the name of your device.
 
 Here we will want to use this box to control a simple gain fade-in for the soundfile player in the first audio track of our Max patch. 
 
 Select our box called <code>Box.2</code>. It should be highlighted by a blue shadow-like. 
 
-Then from the Device explorer panel, deploy the various nodes of our Patch namespace until you reach the following address:
+Then from the Device explorer panel, deploy the various levels of our Patch parameters addresses until you reach the following:
 
 <code>mediaPlayer/audio/track.1/input/audio/gain</code>
 
@@ -33,33 +53,15 @@ From the Max patch GUI, set the Master gain slider of the input module to 100, t
 
 If you play our scenario, you should see the GUI being updated as i-score goes through the automation in the box.
 
-<blockquote class="tip">Note that boxes can be played individually by clicking the play button in the box top-bar. This can be useful if you want to quickly check the automation you just wrote.</blockquote>
-
-You can now add more content to this box by selecting other parameters from the Device explorer and checking the start and end event boxes. Note that you can "select a group of parameters in a single click":http://i-score.org/documentation/meeting-i-score-interface.
+You can now add more content to this box by selecting other parameters from the Device explorer and checking the start and end event boxes. Note that you can "select a group of parameters with a single click":http://i-score.org/documentation/meeting-i-score-interface.
 
 <blockquote class="tip">
 If you want to remove some parameters from a box, select the parameter in the Device explorer and toggle off the checkbox or press the backspace key.
 </blockquote>
 
-h3. Manually adding content
-
-When checking a start or end event box, i-score automatically grabs the parameter's current value. This is really convenient as it allows to adjust the various parameters of your distant application live and then make a snapshot of its current state. However, this assumes a bi-directionnal communication between i-score and your controlled application. 
-
-When controlling applications that can only receive parameter's value, we can however manually set some values in our box.
-
-As an example, we will manually add some automation values for the pan value of our audio track 1.
-
-Once having created a box as explained above, browse the Device explorer until you reach the following address:
-
-<code>/mediaPlayer/audio/track.1/input/balance/position</code>
-
-Rather than checking the start and end boxes, we will enter some values in the dedicated fields as shown below.
-
-<a href="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values.png"><img src="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values-detail-300x123.png" alt="manually setting values-detail" width="300" height="123" class="aligncenter size-medium wp-image-563" /></a>
-
 h3. Recording automations
 
-i-score allows to record incoming parameter's value into automation box. To do so, once selected the automation box to store value recording, navigate to the desired parameter address in the Device explorer and click on the interpolation check box while holding the cmd/ctl key down, respectively on Mac and Windows. You will see that the check box turned into a "recording" icon and the selected automation box is highlited in red. Now if you start playing your scenario, all incoming values as the box get played will be recorded as an automation.
+i-score allows to record incoming parameter's value into automation box. To do so, once selected the automation box to store value recording, navigate to the desired parameter address in the Device explorer and click on the interpolation check box while holding the cmd/ctl key down, respectively on Mac and Windows. You will see that the check box turned into a "recording" icon and the selected automation box is highlited in red. Now if you start playing your scenario, all incoming values while the box get played will be recorded as an automation.
 
 Note that you may arm recording for many parameters at once.
 
@@ -85,7 +87,7 @@ You can also add to each segment of the break point function a curve factor. For
 
 h4. Free curve drawing
 
-You can also write a custom interpolation curve by drawing inthe automation box. When having selected the parameter interpolation to edit as explained above, hold down the cmd/ctl key (respectively on Mac and Windows) and drag your mouse in the automation box. As you hover the box while holding the cmd/ctl key down, you will notice that the mouse cursor changes into a pen. You can now draw a curve as desired.
+You can also write a custom interpolation curve by drawing in the automation box. When having selected the parameter interpolation to edit as explained above, hold down the cmd/ctl key (respectively on Mac and Windows) and drag your mouse in the automation box. As you hover the box while holding the cmd/ctl key down, you will notice that the mouse cursor changes into a pen. You can now draw a curve as desired.
 
 !./images/freehand.png(Free curve drawing)!
 

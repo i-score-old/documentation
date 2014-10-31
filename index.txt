@@ -3,8 +3,9 @@ h3. Introduction
 * "Introduction to i-score":introduction.html
 * "Meeting i-score interface":meeting-i-score-interface.html
 
-h3. Setting up i-score with distant applications
+h3. Setting up i-score
 
+* "Installing i-score":install-guide.html
 * "Using i-score with OSC":i-score-and-osc.html
 * "Using i-score with Minuit":i-score-and-minuit.html
 

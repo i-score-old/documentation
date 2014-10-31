@@ -14,7 +14,7 @@ First, select "OSC" in the protocols menu.
 
 You can then set an optional name (here we'll use "myOSCApp") your OSC application will be displayed under in i-score Device explorer.
 
-Setup a destination port (that is, the port your remote application uses to receive incoming OSC messages) an, if your remote application can send out notifications at each parameter's value change, setup a reception port (that is, the port used by your remote application to send out OSC notifications).
+Setup a destination port (that is, the port your remote application uses to receive incoming OSC messages) and, if your remote application can send out notifications at each parameter's value change, setup a reception port (that is, the port used by your remote application to send out OSC notifications).
 
 Then set the IP address of the computer running your OSC application and click "ok" when you are done (by default, i-score uses your local IP address).
 
@@ -24,11 +24,11 @@ You should now have an item called "myOSCApp" in i-score Device explorer.
 
 h3. Adding OSC addresses
 
-In order to control your OSC compatible application from i-score, you will have to declare the OSC address of each application's parameter you want to control. This can be done in three different ways.
+In order to control your OSC compatible application from i-score, you have to declare the OSC address of each application's parameter you want to control. This can be done in three different ways.
 
 h4. Manual namespace editing
 
-Expand your device <a href="http://i-score.org/documentation/references" target="#namespace">namespace</a> explorer using the arrow, then click the "Add a node" button.
+Expand your device top-level address using the arrow, then click the "Add a node" button.
 
 <a href="http://i-score.org/wp-content/uploads/2014/07/expanding-node.png"><img class="alignnone size-medium wp-image-451" src="http://i-score.org/wp-content/uploads/2014/09/expanding-node-detail.png" alt="expanding node" /></a>
 
@@ -55,7 +55,7 @@ For optimization concerns, it is better to turn off the learn mode (by uncheckin
 
 h4. Loading an OSC namespace configuration file
 
-i-score also allows to load a previously saved namespace file ; this can show useful when working with applications with static structures. As pointed below, we provide a set of namespace files for some applications (such as Modul8, OLA, Dlight... etc). 
+i-score also allows to load a previously saved namespace file, that is, a file listing as a tree-like structure all addresses of your application. This can show useful when working with applications with static structures. As pointed below, we provide a set of namespace files for some applications (such as Modul8, OLA, Dlight... etc). 
 
 When creating a new device, click the "Load" button from the device configuration window and select the configuration file on your disk. Here, we'll load the configuration file for the application "modul8":http://www.modul8.ch.
 

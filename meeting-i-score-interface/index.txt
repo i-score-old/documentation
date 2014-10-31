@@ -1,6 +1,6 @@
 This guide will walk you through the various component of i-score interface.
 
-The interface is made around two main parts: the Device Explorer, used to navigate and manage your distant application's parameters and the timeline where you will create and organize your automations in time.
+i-score interface is organized around two main parts: the Device Explorer, used to navigate and manage your distant application's parameters and the timeline where you create and organize your automations in time.
 
 h3. Timeline
 
@@ -8,7 +8,7 @@ When starting a brand new project, i-score offers a blank score named by default
 
 !./images/timeline.png(i-score timeline pane)!
 
-The main area is where you will create and organize various objects such as automations boxes along the indicative time rule at the top. 
+The main area is where you create and organize various objects such as automations boxes along the indicative time rule at the top. 
 
 Objects are created by dragging your mouse in the scenario while holding cmd/ctl (respectively on Mac and Window). See "Writing automation":writing-automations.html section for detailed explanations.
 
@@ -24,7 +24,7 @@ This top bar also provides a transport section with the following controls:
 
 h3. Device explorer
 
-The Device explorer allows to navigate through the various parameters of your distant application and select/unselect the parameter whose values will be stored in an object on the timeline.
+The Device explorer allows to navigate through the various parameters of your distant application and select/unselect the parameter whose values to get stored in an object on the timeline.
 
 !./images/deviceexplorer.png(i-score Device explorer)!
 
@@ -32,7 +32,7 @@ The Device explorer pane can be hidden/displayed by toggling the Device explorer
 
 !./images/deviceexplorer-move.png(Device explorer mover)!
 
-h4. Basic components (exploring your application ?)
+h4. Basic components
 
 The Device explorer displays a structured list of all parameters of a distant application loaded as an i-score device (See "Using i-score with osc applications":./i-score-and-osc.html and "Using i-score with Minuit applications":./i-score-and-minuit.html for detailed explanations).
 
@@ -70,10 +70,10 @@ Some additionnal settings can be accessed by widening the Device explorer pane (
 
 !./images/deviceexplorer-column.png(Device explorer advanced settings)!
 
-The first column named "=" set whether repeted values will get filtered out (default) when playing an automation.
+The first column named "=" sets whether repeted values will get filtered out (default) when playing an automation.
 
 Column named "%" allows to define the rate at which values will get sent by i-score. Time between two values is given as milliseconds.
 
 "Type" column displays a symbol depending on the type of the parameter: bidirectionnal (@<->@), receiver (@->@) or sender (@<-@).
 
-Finally, "min" and "max" column display some optional minimum and maximum values for the parameter, as defined in the namespace file of your device (ie. for OSC devices) or as queried by i-score (ie. for Minuit devices).
+Finally, "min" and "max" column display some optional minimum and maximum values for the parameter, as optionally defined in the xml file describing the parameters structure of your device (ie. for OSC devices) or as queried by i-score (ie. for Minuit devices).
