@@ -13,7 +13,7 @@ h3. Using i-score
 
 * "Writing automations":writing-automations.html
 * "Controlling execution":global-control-of-execution.html
-* "Combining time approaches":combining-time-approaches.html
+* "Event interactive triggering":event-interactive-triggering.html
 * "Setting intervals between events":setting-intervals-between-events.html
 * "Working with subscenarios":working-with-sub-scenarios.html
 
