@@ -1,3 +1,7 @@
+---
+title: Meeting i-score interface
+---
+
 This guide will walk you through the various component of i-score interface.
 
 i-score interface is organized around two main parts: the Device Explorer, used to navigate and manage your distant application's parameters and the timeline where you create and organize your automations in time.

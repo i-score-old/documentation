@@ -1,3 +1,7 @@
+---
+title: Working with sub-scenarios
+---
+
 When working on a large project, there may be a point where setting intervals between a number of automation boxes can be tedious when adjusting your scenario. For example, when writting the scenario of a whole live performance, you will most likely have a number of automations written through the various scene of your scenario. Thus you may want to group automations belonging to a particular scene so you can manage them as a whole. Hence i-score let you write sub-scenarios in a given box.
 
 bq. As of version 0.2.2 sub-scenario offer the same set of features as working in the main timeline. However, upcoming versions of i-score will bring some advanced features to sub-scenario such as the ability to loop sub-scenarios.

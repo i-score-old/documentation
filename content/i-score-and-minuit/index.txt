@@ -1,3 +1,7 @@
+---
+title: i-score and Minuit
+---
+
 i-score allows to remotely control "Minuit":https://github.com/Minuit/minuit compatible devices (software or hardware).
 
 <blockquote>Minuit is a query system built on top of OSC, in order to ease the communication between various applications. It allows applications to query the namespace of a distant application, its various parameters value or their attributes (ie. value range, data unit). See the "public Github repository":https://github.com/Minuit/minuit for more information.</blockquote>

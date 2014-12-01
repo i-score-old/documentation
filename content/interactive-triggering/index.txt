@@ -1,3 +1,7 @@
+---
+title: Interactive triggering
+---
+
 When writing your interactive scenario, there are some cases where you want a specific automation to run at some point but cannot know when. For example, when writing the scenario of an interactive art installation, you know that an automation will start playing whenever a visitor enters the exhibition space or passes by a sensor, but you can not know when he will do so. To help with that, i-score let you set that an automation box will be triggered interactively. We can add a "trigger" to a box by clicking one of the handle at the box's top corners as illustrated below.
 
 <a href="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point-detail-300x259.png" alt="adding trigger point-detail" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>

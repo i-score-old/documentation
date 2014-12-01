@@ -1,3 +1,7 @@
+---
+title: Install guide
+---
+
 h3. OSX
 
 Download the standalone application on "the download page":http://i-score.org/download/

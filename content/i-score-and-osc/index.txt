@@ -1,3 +1,7 @@
+---
+title: i-score and OSC
+---
+
 i-score allows to remotely control OSC ("Open Sound Control":http://en.wikipedia.org/wiki/Open_Sound_Control) compatible "devices":http://i-score.org/documentation/references#device (software or hardware).
 
 h3. Setting up your OSC compatible device
