@@ -1,0 +1,7 @@
+source 'https://rubygems.org'
+gem 'nanoc', '3.7.4'
+gem 'RedCloth'
+gem 'typogruby'
+gem 'rainpress'
+gem 'builder'
+gem 'adsf'
