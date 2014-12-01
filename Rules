@@ -13,56 +13,22 @@
 #   item, use the pattern “/about/*/”; “/about/*” will also select the parent,
 #   because “*” matches zero or more characters.
 
-
-
-
-compile '/' do
-  filter :erb
-  filter :redcloth
-  filter :argh
-  layout 'default'
-  filter :typogruby
+compile '*' do
+  if item[:extension] == 'css'
+    # don’t filter stylesheets
+  elsif item.binary?
+    # don’t filter binary items
+  else
+    filter :erb
+    layout 'default'
+  end
 end
 
-
-# By default, nanoc use the page name as folder name and add an index.html page (as in first case). Here, unless the page is named "index.something" we keep the page name.
-
 route '*' do
-  case item[:extension]
-    when 'css'
-      item.identifier.chop + '.' + item[:extension]
-    when 'js'
-      item.identifier.chop + '.' + item[:extension]
-    when 'png'
-      item.identifier.chop + '.' + item[:extension]
-    when 'jpg'
-      item.identifier.chop + '.' + item[:extension]
-    when 'maxpat'
-      item.identifier.chop + '.' + item[:extension]
-    when 'txt'
-      item.identifier.chop + '.' + item[:extension]
-    when 'textile'
-      if item[:content_filename] =~ /\/index.*$/ 
-        item.identifier + 'index.html' 
-      else 
-        item.identifier.chop + '.html'
-      end
-    when 'txt'
-      if item[:content_filename] =~ /\/index.*$/ 
-        item.identifier + 'index.html' 
-      else 
-        item.identifier.chop + '.html'
-      end
-    end 
-end
-
-
-##############################################################################
-# General rule
-##############################################################################
-
-route '*' do
-  if item.binary?
+  if item[:extension] == 'css'
+    # Write item with identifier /foo/ to /foo.css
+    item.identifier.chop + '.css'
+  elsif item.binary?
     # Write item with identifier /foo/ to /foo.ext
     item.identifier.chop + '.' + item[:extension]
   else
@@ -71,29 +37,4 @@ route '*' do
   end
 end
 
-##############################################################################
-# Front page
-##############################################################################
-
-route '/' do
-  '/index.html'
-end
-
-##############################################################################
-# Static content, not used currently
-##############################################################################
-
-compile '/static/*/' do
-end
-
-route '/static/*/' do
-  item.identifier[7..-2]
-end
-
-
-
-##############################################################################
-# Generic rendering
-##############################################################################
-
-layout '/*/', :erb
+layout '*', :erb
