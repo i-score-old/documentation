@@ -10,4 +10,4 @@ By default, i-score execution works in a similar way to most digital audio or vi
 
 Global speed of execution can be changed while i-score play your scenario. This can be done by using the slider in i-score's top-bar to modulate the unity speed of execution. A speed factor of 0.5 will play your scenario twice as slow, whereas a speed factor of 2 will play your scenario twice as fast. For instance, in a live performance context, you might want to slow down a bit the execution of your scenario to synchronise manually to some actions happening on stage.
 
-<video width="720" height="405"> <source src="./images/adjusting-global-speed.mp4" type="video/mp4">Video cannot be displayed inline. Click <a href="./images/adjusting-global-speed.mp4">here</a>.</video>
+<video width="720" height="405" src="./images/adjusting-global-speed.mp4" preload="metadata" controls >Video cannot be displayed inline. Click <a href="./images/adjusting-global-speed.mp4">here</a>.</video>

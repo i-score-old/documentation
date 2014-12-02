@@ -16,4 +16,4 @@ When done, the automation box displays a flag at its corner (start event, in our
 
 As illustrated in the video below, when playing our scenario, the interactive automation box flag turns green when it is ready to be triggered until it is started by a mouse click or when receiving the OSC message displayed above the box (<code>/'box name'/start</code>. When playing, the interactive automation box's flag turns red until it is done.
 
-<video width="720" height="405" source="./images/interactive-triggering.mp4" type="video/mp4">Video cannot be displayed inline. Click <a href="./images/interactive-triggering.mp4">here</a></video>
+<video width="720" height="405" src="./images/interactive-triggering.mp4" preload="metadata" controls >Video cannot be displayed inline. Click <a href="./images/interactive-triggering.mp4">here</a></video>
