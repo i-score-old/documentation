@@ -359,7 +359,7 @@ form div {
 body{
 	width: 700px;
 	margin-left: 300px;
-	margin-top: 100px;
+	margin-top: 220px;
 }
 a{
 	color: #1f1e1e;
@@ -462,6 +462,14 @@ video{
 #sidebar a{
 	color: #757575;
 	text-decoration: none;
+}
+
+#sidebar img{
+	width: 70px;
+	-moz-box-shadow: 0 0 0;
+	box-shadow: 0 0 0;
+	border-style: none;
+	padding: 0;
 }
 /*#sidebar h2 {
   text-transform: uppercase;
