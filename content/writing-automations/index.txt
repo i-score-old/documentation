@@ -6,14 +6,14 @@ In this tutorial, we will see how to create events and automations in i-score. A
 
 In the timeline panel, draw an empty box using cmd+drag (on Mac) or ctrl-drag (on Win and Linux). 
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/drawing-box.png"><img src="http://i-score.org/wp-content/uploads/2014/09/drawing-box-detail-300x186.png" alt="drawing box-detail" width="300" height="186" class="aligncenter size-medium wp-image-533" /></a>
+<a href="./images/drawing-box.png"><img src="./images/drawing-box-detail.png" alt="drawing box-detail" width="300" height="186" class="aligncenter size-medium wp-image-533" /></a>
 
 When done, you can freely move the box in i-score's timeline and adjust its start time and duration. For example, we will want our box to start playing at 0 min 1 sec. and stop at 0 min. 5 sec. You can move the box by clicking its top bar and adjust its duration by dragging its lower right corner as shown below.
 
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/ajusting-start-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/asjusting-start-point-detail-300x249.png" alt="asjusting start point-detail" width="300" height="249" class="aligncenter size-medium wp-image-532" /></a>
+<a href="./images/ajusting-start-point.png"><img src="./images/asjusting-start-point-detail.png" alt="asjusting start point-detail" width="300" height="249" class="aligncenter size-medium wp-image-532" /></a>
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/adjusting-size-box.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adjusting-size-box-detail1-300x205.png" alt="adjusting size box-detail" width="300" height="205" class="aligncenter size-medium wp-image-537" /></a>
+<a href="./images/adjusting-size-box.png"><img src="./images/adjusting-size-box-detail1.png" alt="adjusting size box-detail" width="300" height="205" class="aligncenter size-medium wp-image-537" /></a>
 
 h3. Manually adding content
 
@@ -27,7 +27,7 @@ Once having created a box as explained above, browse the Device explorer until y
 
 If you double-click in the start of end cell, you see that the cell brings a textfield. You can then enter some values to be used as the start event and end event of the automation box. 
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values.png"><img src="http://i-score.org/wp-content/uploads/2014/09/manually-setting-values-detail-300x123.png" alt="manually setting values-detail" width="300" height="123" class="aligncenter size-medium wp-image-563" /></a>
+<a href="./images/manually-setting-values.png"><img src="./images/manually-setting-values-detail.png" alt="manually setting values-detail" width="300" height="123" class="aligncenter size-medium wp-image-563" /></a>
 
 Content added to a start or end event is symbolized in the box by a grey shade at the box side.
 
@@ -51,11 +51,11 @@ Then from the Device explorer panel, deploy the various levels of our Patch para
 
 <code>mediaPlayer/audio/track.1/input/audio/gain</code>
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/selecting-parameters.png"><img src="http://i-score.org/wp-content/uploads/2014/09/selecting-parameters-detail-275x300.png" alt="selecting parameters-detail" width="275" height="300" class="aligncenter size-medium wp-image-535" /></a>
+<a href="./images/selecting-parameters.png"><img src="./images/selecting-parameters-detail.png" alt="selecting parameters-detail" width="275" height="300" class="aligncenter size-medium wp-image-535" /></a>
 
 You can then click the checkbox beside our gain parameter to store its current value at the box's start event. You can see that our parameter value was automatically grabbed from our Max patch and is displayed in the field next the checkbox. Again, the value is symbolized as a shade of grey at the box's side.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/adding-start-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-start-point-detail.png" alt="adding start point" width="300" height="187" class="aligncenter size-medium wp-image-528" /></a>
+<a href="./images/adding-start-point.png"><img src="./images/adding-start-point-detail.png" alt="adding start point" width="300" height="187" class="aligncenter size-medium wp-image-528" /></a>
 
 <blockquote class="tip">
 If you want to remove some parameters from a box, select the parameter in the Device explorer and toggle off the checkbox or press the backspace key.
@@ -63,7 +63,7 @@ If you want to remove some parameters from a box, select the parameter in the De
 
 From the Max patch GUI, set the Master gain slider of the input module to 100, then store that value at the end event of <code>Box.2</code>. From i-score's Device explorer, click the end checkbox next to our gain parameter. 
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/adding-end-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-end-point-detail-300x146.png" alt="adding end point-detail" width="300" height="146" class="aligncenter size-medium wp-image-525" /></a>
+<a href="./images/adding-end-point.png"><img src="./images/adding-end-point-detail.png" alt="adding end point-detail" width="300" height="146" class="aligncenter size-medium wp-image-525" /></a>
 
 If you play our scenario, you should see the GUI being updated as i-score goes through the automation in the box.
 
@@ -88,17 +88,17 @@ When setting a parameter's start and end value in a box, i-score will automatica
 
 From the box top-bar, select the parameter interpolation you want to edit from the drop-down menu. The interpolation function is now displayed at the box foreground.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/editing-interpolation.png"><img src="http://i-score.org/wp-content/uploads/2014/09/editing-interpolation-detail-300x150.png" alt="editing interpolation-detail" width="300" height="150" class="aligncenter size-medium wp-image-557" /></a>
+<a href="./images/editing-interpolation.png"><img src="./images/editing-interpolation-detail.png" alt="editing interpolation-detail" width="300" height="150" class="aligncenter size-medium wp-image-557" /></a>
 
 h4. Break Point Function editing
 
 Points can be added to the default function by clicking in the box. Note that you can delete existing point by alt-clicking a point.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/drawing-bpf.png"><img src="http://i-score.org/wp-content/uploads/2014/09/drawing-bpf-detail-300x212.png" alt="drawing bpf-detail" width="300" height="212" class="aligncenter size-medium wp-image-559" /></a>
+<a href="./images/drawing-bpf.png"><img src="./images/drawing-bpf-detail.png" alt="drawing bpf-detail" width="300" height="212" class="aligncenter size-medium wp-image-559" /></a>
 
 You can also add to each segment of the break point function a curve factor. For this, shift+click on a point and drag your mouse upward ou downward.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/curve-factor.png"><img src="http://i-score.org/wp-content/uploads/2014/09/curve-factor-detail-300x212.png" alt="curve factor-detail" width="300" height="212" class="aligncenter size-medium wp-image-561" /></a>
+<a href="./images/curve-factor.png"><img src="./images/curve-factor-detail.png" alt="curve factor-detail" width="300" height="212" class="aligncenter size-medium wp-image-561" /></a>
 
 h4. Free curve drawing
 

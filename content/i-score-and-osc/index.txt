@@ -10,11 +10,11 @@ When opening a brand new i-score project, you first need to setup in i-score the
 
 From the Device explorer panel, click the "Add a device" button to bring up the remote application setup window.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/adding-osc-device.png"><img class="alignnone size-medium wp-image-448" src="http://i-score.org/wp-content/uploads/2014/09/adding-osc-device.png" alt="adding osc device" /></a>
+<a href="./images/adding-osc-device.png"><img class="alignnone size-medium wp-image-448" src="./images/adding-osc-device.png" alt="adding osc device" /></a>
 
 First, select "OSC" in the protocols menu.
 
-<a href="http://i-score.org/wp-content/uploads/2014/07/create-osc-device.png"><img class="alignnone size-medium wp-image-449" src="http://i-score.org/wp-content/uploads/2014/09/create-osc-device-detail.png" alt="create osc device" /></a>
+<a href="./images/create-osc-device.png"><img class="alignnone size-medium wp-image-449" src="./images/create-osc-device-detail.png" alt="create osc device" /></a>
 
 You can then set an optional name (here we'll use "myOSCApp") your OSC application will be displayed under in i-score Device explorer.
 
@@ -24,7 +24,7 @@ Then set the IP address of the computer running your OSC application and click "
 
 You should now have an item called "myOSCApp" in i-score Device explorer.
 
-<a href="http://i-score.org/wp-content/uploads/2014/07/device-ok.png"><img class="alignnone size-medium wp-image-450" src="http://i-score.org/wp-content/uploads/2014/09/device-ok-detail.png" alt="device ok" /></a>
+<a href="./images/device-ok.png"><img class="alignnone size-medium wp-image-450" src="./images/device-ok-detail.png" alt="device ok" /></a>
 
 h3. Adding OSC addresses
 
@@ -34,7 +34,7 @@ h4. Manual namespace editing
 
 Expand your device top-level address using the arrow, then click the "Add a node" button.
 
-<a href="http://i-score.org/wp-content/uploads/2014/07/expanding-node.png"><img class="alignnone size-medium wp-image-451" src="http://i-score.org/wp-content/uploads/2014/09/expanding-node-detail.png" alt="expanding node" /></a>
+<a href="./images/expanding-node.png"><img class="alignnone size-medium wp-image-451" src="./images/expanding-node-detail.png" alt="expanding node" /></a>
 
 You can then write your application's parameter address in the pop-up window.
 
@@ -49,11 +49,11 @@ Typing all your application's parameters addresses can be tedious, hence i-score
 /layer/2/alpha value
 </code>
 
-<a href="http://i-score.org/wp-content/uploads/2014/07/osc-learn.png"><img class="alignnone size-medium wp-image-460" src="http://i-score.org/wp-content/uploads/2014/09/osc-learn-detail.png" alt="osc learn" /></a>
+<a href="./images/osc-learn.png"><img class="alignnone size-medium wp-image-460" src="./images/osc-learn-detail.png" alt="osc learn" /></a>
 
 The Device explorer should now display your remote application OSC addresses.
 
-<a href="http://i-score.org/wp-content/uploads/2014/07/osc-learned.png"><img class="alignnone size-medium wp-image-461" src="http://i-score.org/wp-content/uploads/2014/07/osc-learned.png" alt="osc learned" /></a>
+<a href="./images/osc-learned.png"><img class="alignnone size-medium wp-image-461" src="./images/osc-learned.png" alt="osc learned" /></a>
 
 For optimization concerns, it is better to turn off the learn mode (by unchecking the check box) when done.
 
@@ -63,11 +63,11 @@ i-score also allows to load a previously saved namespace file, that is, a file l
 
 When creating a new device, click the "Load" button from the device configuration window and select the configuration file on your disk. Here, we'll load the configuration file for the application "modul8":http://www.modul8.ch.
 
-<a href="http://i-score.org/wp-content/uploads/2014/07/loading-xml.png"><img class="alignnone" src="http://i-score.org/wp-content/uploads/2014/07/loading-xml-300x168.png" alt="loading xml" /></a>
+<a href="./images/loading-xml.png"><img class="alignnone" src="./images/loading-xml.png" alt="loading xml" /></a>
 
 When done, all of the modul8 OSC parameter described in the configuration file should appear in i-score Device explorer as show below.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/modul8-conf.png"><img class="alignnone wp-image-463" src="http://i-score.org/wp-content/uploads/2014/09/modul8-conf-168x300.png" alt="modul8-conf" /></a>
+<a href="./images/modul8-conf.png"><img class="alignnone wp-image-463" src="./images/modul8-conf.png" alt="modul8-conf" /></a>
 
 <blockquote>Note that as of version 0.2, i-score does not allow to export your application namespace as an xml configuration file. Such file has to be done in your favorite text editor.
 

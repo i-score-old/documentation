@@ -6,7 +6,7 @@ h3. Global control of execution
 
 By default, i-score execution works in a similar way to most digital audio or video workstations: automation boxes are played as the playhead run across the timeline. In the screenshot below, you can see that each automation box has its own progress bar displaying where the playhead is in the automation.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/simple-playing.png"><img src="http://i-score.org/wp-content/uploads/2014/09/simple-playing-detail.png" alt="simple playing-detail" width="300" height="230" class="aligncenter size-medium wp-image-603" /></a>
+<a href="./images/simple-playing.png"><img src="./images/simple-playing-detail.png" alt="simple playing-detail" width="300" height="230" class="aligncenter size-medium wp-image-603" /></a>
 
 Global speed of execution can be changed while i-score play your scenario. This can be done by using the slider in i-score's top-bar to modulate the unity speed of execution. A speed factor of 0.5 will play your scenario twice as slow, whereas a speed factor of 2 will play your scenario twice as fast. For instance, in a live performance context, you might want to slow down a bit the execution of your scenario to synchronise manually to some actions happening on stage.
 

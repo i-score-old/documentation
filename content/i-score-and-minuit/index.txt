@@ -18,7 +18,7 @@ This is a simple multimedia player providing two audio tracks (input source, an 
 
 From the Device explorer panel, click the "Add a device" button to bring up the remote application setup window.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/adding-osc-device.png"><img class="alignnone size-medium wp-image-448" src="http://i-score.org/wp-content/uploads/2014/09/adding-osc-device.png" alt="adding osc device" width="300" height="187" /></a>
+<a href="./images/adding-osc-device.png"><img class="alignnone size-medium wp-image-448" src="./images/adding-osc-device.png" alt="adding osc device" width="300" height="187" /></a>
 
 Choose "Minuit" in the protocols menu. From the Device setup window, set your Minuit enabled patch name and click ok. Depending on the size of your application, the scanning of all adresses might take some time (up to 30 seconds, for a very large application).
 

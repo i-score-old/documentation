@@ -8,11 +8,11 @@ However, when writing your interactive scenario, there are some cases where you 
 
 We can add a "trigger" to a box by clicking one of the handle at the box's top corners as illustrated below.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point.png"><img src="http://i-score.org/wp-content/uploads/2014/09/adding-trigger-point-detail-300x259.png" alt="adding trigger point-detail" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+<a href="./images/adding-trigger-point.png"><img src="./images/adding-trigger-point-detail.png" alt="adding trigger point" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
 When done, the automation box displays a flag at its corner (start event, in our case). Now when playing our scenario, the automation will not start as the global playhead crosses its start event and will have to be triggered dynamically.
 
-<a href="http://i-score.org/wp-content/uploads/2014/09/interactive-automation-box.png"><img src="http://i-score.org/wp-content/uploads/2014/09/interactive-automation-box-detail-300x269.png" alt="interactive automation box-detail" width="300" height="269" class="aligncenter size-medium wp-image-616" /></a>
+<a href="./images/interactive-automation-box.png"><img src="./images/interactive-automation-box-detail.png" alt="interactive automation box-detail" width="300" height="269" class="aligncenter size-medium wp-image-616" /></a>
 
 As illustrated in the video below, when playing our scenario, the interactive automation box flag turns green when it is ready to be triggered until it is started by a mouse click or when receiving the OSC message displayed above the box (<code>/'box name'/start</code>. When playing, the interactive automation box's flag turns red until it is done.
 
