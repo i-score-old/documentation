@@ -13,7 +13,7 @@ When done, you can freely move the box in i-score's timeline and adjust its star
 
 <a href="./images/ajusting-start-point.png"><img src="./images/asjusting-start-point-detail.png" alt="asjusting start point-detail" width="300" height="249" class="aligncenter size-medium wp-image-532" /></a>
 
-<a href="./images/adjusting-size-box.png"><img src="./images/adjusting-size-box-detail1.png" alt="adjusting size box-detail" width="300" height="205" class="aligncenter size-medium wp-image-537" /></a>
+<a href="./images/adjusting-size-box.png"><img src="./images/adjusting-size-box-detail.png" alt="adjusting size box-detail" width="300" height="205" class="aligncenter size-medium wp-image-537" /></a>
 
 h3. Manually adding content
 
