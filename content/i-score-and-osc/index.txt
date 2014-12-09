@@ -26,6 +26,8 @@ You should now have an item called "myOSCApp" in i-score Device explorer.
 
 <a href="./images/device-ok.png"><img class="alignnone size-medium wp-image-450" src="./images/device-ok-detail.png" alt="device ok" /></a>
 
+bq. Note that "OSC reserved characters":http://opensoundcontrol.org/spec-1_0 as well as colons should be avoided in device name.
+
 h3. Adding OSC addresses
 
 In order to control your OSC compatible application from i-score, you have to declare the OSC address of each application's parameter you want to control. This can be done in three different ways.
