@@ -24,7 +24,7 @@ Choose "Minuit" in the protocols menu. From the Device setup window, set your Mi
 
 <a href="./images/setup-patch.png"><img src="./images/setup-patch-detail.png" alt="setup patch" width="300" height="172" class="alignnone size-medium wp-image-486" /></a>
 
-i-score Device explorer should now display all your Max patch namespace. Expand various addresses nodes to browse through your patch structure. Note that thanks to Minuit exchanges between i-score and Max, i-score automatically filled some additional informations regarding each parameter (ie. type, range...).
+i-score Device explorer should now display all your Max patch namespace. Expand various addresses nodes to browse through your patch structure. Note that thanks to Minuit exchanges between i-score and Max, i-score automatically filled some additional informations regarding each parameter (ie. access, range...).
 
 <a href="./images/minuit-namespace.png"><img src="./images/minuit-namespace-detail.png" alt="minuit namespace-detail" width="300" height="172" class="alignnone size-medium wp-image-487"/></a>
 

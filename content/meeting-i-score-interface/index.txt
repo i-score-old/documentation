@@ -51,7 +51,7 @@ bq. /parent/topParameter.1
 
 !./images/nodes.png(Structured list of parameters)!
 
-Each parameter can be of 3 different types:
+Each parameter can be of 3 different access mode:
 
 - bidirectionnal: a distant application's parameter can be set and get from i-score
 - receiver: a distant application's parameter can be set from i-score
@@ -78,6 +78,6 @@ The first column named "=" sets whether repeted values will get filtered out (de
 
 Column named "%" allows to define the rate at which values will get sent by i-score. Time between two values is given as milliseconds.
 
-"Type" column displays a symbol depending on the type of the parameter: bidirectionnal (@<->@), receiver (@->@) or sender (@<-@).
+"Access" column displays a symbol depending on the access mode of the parameter: bidirectionnal (@<->@), receiver (@->@) or sender (@<-@).
 
 Finally, "min" and "max" column display some optional minimum and maximum values for the parameter, as optionally defined in the xml file describing the parameters structure of your device (ie. for OSC devices) or as queried by i-score (ie. for Minuit devices).
