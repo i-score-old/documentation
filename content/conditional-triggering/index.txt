@@ -1,0 +1,35 @@
+---
+title: conditional triggering
+---
+
+As seen previsouly, automations can be triggered remotely by sending an osc message such as @/'my box name'/start@. As nice as it can be, i-score allows to go a step further by allowing to set logical conditions to automations trigger.
+
+For this tutorial, we will write the scenario of an imaginary interactive installation where we want a particular sound file to be played when the visitor approaches a particular area of the exhibition room.
+
+h3. Advanced triggering of event
+
+In the screenshot below, we have a very simple "Max":http://www.cycling74.com patch with an audiofile player and a distance sensor subpatch declared as an OSC device. In i-score we simply stored an automation doing an audio fade in. So far our automation box only contains a trigger so it can be controlled remotely.
+
+!(nozoom)./images/setup.png!
+
+Our Max patch returns an OSC message @/visitor/proximity@ followed by a boolean (0|1) value stating whether a visitor is within a specific area or not. We can ask i-score to listen to this particular message value and act accordingly. In this case: trigger the automation's start event when the value turns to 1.
+
+To do so, double-click on the trigger. This brings a window to set our condition.
+
+!./images/conditional-window.png!
+
+The window lets you pick a device then select the parameter address you would like to listen to in the address menu. You may as well directly type the address in the dedicated textfield. Then select the operator and set an optionnal value. Here, we can pick the equal sign and set 1 in the condition textfield. Click the OK button when done.
+
+When playing the scenario, i-score will start evaluating whether the condition is met as soon as the trigger flag turns green. Hence if the @/visitor/proximity@ message was last sent with a 1 value, the automation will be triggered as soon as the flag turns green. If the condition is not met when the flag turns green, i-score will wait until this message is received before starting to play the automation.
+
+h3. Branching scenarios
+
+conditional triggering lets you add a great amount of flexibility to your events sequencing. For example, by combining multiple conditionned events, one can create branches for a scenario. Let's push our imaginary interactive installation a bit further. 
+
+Here we changed our patch so that the @/visitor/proximity@ OSC message returns a continuous value (ie. a distance from 0 to 1 between the visitor and the sensor). Rather than applying a fade-in on a soundfile when the visitor is within a defined area, what we want here is to start a particular soundfile depending on the visitor distance from the sensor.
+
+Our scenario contains two automation boxes triggering a particular soundfile and applying a fade in. We can define these two automations as different branches to be selected on execution by linking them together. To do so, we will drag a link between the automation boxes start event while holding the @(kbd)alt@ key.
+
+!./images/automation-branches.png!
+
+As explained above, we can now set a condition for each of the trigger starting each branch. In our case, we'll define that @Soundfile1.fade@ automation box will start playing when @/visitor/proximity < 0.5@ and that @Soundfile2.fade@ will start playing when @/visitor/proximity < 0.5@. Now When executing the scenario, when both triggers get available, the condition will be evaluated and the branch whose start condition is met will be chosen.
