@@ -27,4 +27,5 @@ h3. Boxes
 
 h3. Device explorer
 
-* *cmd+click/ctl+click:* clikcing the interpolation checkbox while holding the cmd/ctl key down activate recording of incoming parameter's value
+* *cmd+click/ctl+click:* clicking the interpolation checkbox while holding the cmd/ctl key down activate recording of incoming parameter's value
+* *cmd+click/ctl+click:* clicking start or end automation box checkbox while holding the cmd/ctl key down update stored value to current state 

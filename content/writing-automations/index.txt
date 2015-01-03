@@ -59,6 +59,8 @@ You can then click the checkbox beside our gain parameter to store its current v
 
 <blockquote class="tip">
 If you want to remove some parameters from a box, select the parameter in the Device explorer and toggle off the checkbox or press the backspace key.
+
+You may also update a stored value to its current state by clicking the checkbox while holding the cmd/ctl key down.
 </blockquote>
 
 From the Max patch GUI, set the Master gain slider of the input module to 100, then store that value at the end event of <code>Box.2</code>. From i-score's Device explorer, click the end checkbox next to our gain parameter. 
