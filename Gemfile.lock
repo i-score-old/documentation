@@ -2,15 +2,19 @@ GEM
   remote: https://rubygems.org/
   specs:
     RedCloth (4.2.9)
+    adsf (1.2.0)
+      rack (>= 1.0.0)
     colored (1.2)
     cri (2.6.1)
       colored (~> 1.2)
     nanoc (3.7.4)
       cri (~> 2.3)
+    rack (1.6.0)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
   RedCloth (= 4.2.9)
+  adsf
   nanoc (= 3.7.4)
