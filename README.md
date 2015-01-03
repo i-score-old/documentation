@@ -12,6 +12,8 @@ First of all, one needs to install all necessary ruby gems. In order to do this,
 
 - sudo gem install bundle 
 
+This will install the "bundler":http://bundler.io Ruby gem that manage needed gems
+
 # Building the Web site locally 
 
 Before pushing changes, please make sure everything is fine by building the Web site locally.
