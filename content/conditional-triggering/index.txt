@@ -18,7 +18,7 @@ To do so, double-click on the trigger. This brings a window to set our condition
 
 !./images/conditional-window.png!
 
-The window lets you pick a device then select the parameter address you would like to listen to in the address menu. You may as well directly type the address in the dedicated textfield. Then select the operator and set an optionnal value. Here, we can pick the equal sign and set 1 in the condition textfield. Click the OK button when done.
+The window lets you pick a device then select the parameter address you would like to listen to in the address menu. You may as well directly type the address in the dedicated textfield. Then select the operator and set an optionnal value. AVailable operators are: >, <, >=, <=, ==. Here, we can pick the equal sign and set 1 in the condition textfield. Click the OK button when done.
 
 When playing the scenario, i-score will start evaluating whether the condition is met as soon as the trigger flag turns green. Hence if the @/visitor/proximity@ message was last sent with a 1 value, the automation will be triggered as soon as the flag turns green. If the condition is not met when the flag turns green, i-score will wait until this message is received before starting to play the automation.
 
