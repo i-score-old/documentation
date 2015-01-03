@@ -30,6 +30,6 @@ Here we changed our patch so that the @/visitor/proximity@ OSC message returns a
 
 Our scenario contains two automation boxes triggering a particular soundfile and applying a fade in. We can define these two automations as different branches to be selected on execution by linking them together. To do so, we will drag a link between the automation boxes start event while holding the @(kbd)alt@ key.
 
-!./images/automation-branches.png!
+!./images/automations-branches.png!
 
 As explained above, we can now set a condition for each of the trigger starting each branch. In our case, we'll define that @Soundfile1.fade@ automation box will start playing when @/visitor/proximity < 0.5@ and that @Soundfile2.fade@ will start playing when @/visitor/proximity < 0.5@. Now When executing the scenario, when both triggers get available, the condition will be evaluated and the branch whose start condition is met will be chosen.
