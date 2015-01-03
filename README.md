@@ -34,7 +34,7 @@ In order to stop the web server (e.g. to see new changes and recompile it), type
 
 ## nanoc:
 
-This web site is developed using "nanoc":http://nanoc.stoneship.org/
+The documentation is managed using "nanoc":http://nanoc.stoneship.org/ static website generator.
 
 ## fancyBox:
 
