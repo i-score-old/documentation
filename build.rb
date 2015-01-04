@@ -5,5 +5,6 @@
 Dir.chdir @mydir
 @mydir = Dir.pwd
 
+puts `bundle install`
 puts `nanoc compile`
 puts `nanoc view`
