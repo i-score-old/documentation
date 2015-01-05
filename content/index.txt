@@ -2,11 +2,11 @@
 title: Index
 ---
 
-i-score is an interactive sequencer for intermedia creation. It allows to create flexible and interactive scenarios and is especially designed for live performance, art installation, museography or any context requiring a precise and interactive execution of timed events.
+*i-score is an interactive sequencer for intermedia creation. It allows to create flexible and interactive scenarios and is especially designed for live performance, art installation, museography or any context requiring a precise and interactive execution of timed events.*
 
 h3. A sequencer for distributed media systems
 
-Unlike a number of digital audio or video workstation, i-score does not process media itself. Instead, it works as a remote controller recalling snapshots and automations sent to some distant applications through various protocols such as "Open Sound Control":http://opensoundcontrol.org, Midi or "Minuit":https://github.com/Minuit/minuit. Hence it can easily be used in large setups involving video, audio or light software or hardware. As such, it provides a unified and global solution to control parameters changes in a synchronous or asynchronous way.
+Unlike a number of digital audio or video workstation, i-score does not process media itself. Instead, it works as a remote controller recalling snapshots and automations sent to some distant applications through various protocols such as "Open Sound Control":http://opensoundcontrol.org, "MIDI":http://en.wikipedia.org/wiki/MIDI or "Minuit":https://github.com/Minuit/minuit. Hence it can easily be used in large setups involving video, audio or light software or hardware. As such, it provides a unified and global solution to control parameters changes in a synchronous or asynchronous way.
 
 !./introduction/images/overview.png(i-score overview)!
 
