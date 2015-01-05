@@ -1,5 +1,5 @@
 ---
-title: Working intervals between events
+title: Working constraints between events
 ---
 
 i-score allows to add to your timeline a number of automation boxes where/whenever you want. While writing your scenario, you are free to move boxes along the timeline, adjust their start and end point and structure you score as you need. However, as you add more boxes to the timeline, your score can grow in complexity and editing can become quite of a tedious work. In the score shown below, we can easily see that if we want to make our <code>eq1-fadein</code> automation a bit longer, this will cross the <code>all</code> automation box, add some conflict between the automation stored in <code>eq1-fadein</code> and the one stored in <code>all</code> automation box, misalign boxes together, and so on.
@@ -8,11 +8,11 @@ i-score allows to add to your timeline a number of automation boxes where/whenev
 
 To ease this work, i-score provides ways to set relationships between related events so that you are free to change some automations details while preserving the global structure of your score.
 
-h3. Setting fixed-duration intervals
+h3. Setting fixed-duration constraints
 
-First kind of interval between boxes that can be defined is a fixed-length interval. This ensures that a certain amount of time will be maintained between two events. For instance, you may want to ensure that some video files get properly loaded or that a curtain on stage is drawn before starting automations stored in @Box.3@. Hence, setting a 2 seconds fixed interval between two boxes will ensure that when moving a box, the time between two automations is preserved, thus the scenario is still functionnal. 
+First kind of constraint between boxes that can be defined is a fixed-length constraint. This ensures that a certain amount of time will be maintained between two events. For instance, you may want to ensure that some video files get properly loaded or that a curtain on stage is drawn before starting automations stored in @Box.3@. Hence, setting a 2 seconds fixed constraint between two boxes will ensure that when moving a box, the time between two automations is preserved, thus the scenario is still functionnal. 
 
-Assuming we want to set a interval between the end of <code>Box.2</code> and the beginning of <code>Box.3</code>, we can click the handle on Box.2's right side and drag a link up to the handle in Box.3's side as shown below.
+Assuming we want to set a constraint between the end of <code>Box.2</code> and the beginning of <code>Box.3</code>, we can click the handle on Box.2's right side and drag a link up to the handle in Box.3's side as shown below.
 
 <a href="./images/dragging-link.png"><img src="./images/dragging-link-detail.png" alt="dragging link-detail" class="aligncenter size-medium wp-image-584" /></a>
 
@@ -22,46 +22,46 @@ The duration can be adjusted by moving the vertical handle in the middle of the 
 
 <a href="./images/adjust-duration.png"><img src="./images/adjust-duration-detail.png" alt="adjust duration-detail" class="aligncenter size-medium wp-image-580" /></a>
 
-Intervals can be established from a box end event to a box's start event, but also from a box's start event to another box's start event as well as a box's end event to another box's end event, depending on how you need to align events and structure your scenario. For example, if we set some intervals in the complex score we saw earlier, we see that linking <code>Pan-mvt - copy</code>, <code>eq1-fadein</code> and <code>eq2.4</code> respective end events will ensure that boxes' ends will be kept aligned as we change the duration of <code>eq1-fadein</code> box, while linking <code>eq1-fadein</code> end point to <code>all</code> box's start event will push the later so that boxes do not overlap.
+constraints can be established from a box end event to a box's start event, but also from a box's start event to another box's start event as well as a box's end event to another box's end event, depending on how you need to align events and structure your scenario. For example, if we set some constraints in the complex score we saw earlier, we see that linking <code>Pan-mvt - copy</code>, <code>eq1-fadein</code> and <code>eq2.4</code> respective end events will ensure that boxes' ends will be kept aligned as we change the duration of <code>eq1-fadein</code> box, while linking <code>eq1-fadein</code> end point to <code>all</code> box's start event will push the later so that boxes do not overlap.
 
 <video width="720" height="405" src="./images/complexity_pushed.mp4"  preload="metadata" controls>You video cannot be displayed. Click <a href="./images/complexity_pushed.mp4">here</a>.</video>
 
-<blockquote class="tip">Note that i-score is smart enough to check whether an interval is valid or not. For instance, it will prevent you from doing illogical interval (ie. linking a box to itself, in case you would ask)</blockquote>
+<blockquote class="tip">Note that i-score is smart enough to check whether an constraint is valid or not. For instance, it will prevent you from doing illogical constraint (ie. linking a box to itself, in case you would ask)</blockquote>
 
-h3. Setting flexible intervals
+h3. Setting flexible constraints
 
-You can also set intervals of variable/undefined time between boxes. When setting flexible intervals, you will be able to move automation boxes freely along the timeline as long as the order defined by the interval is preserved. That is, if @Box.2@'s end event reaches @Box.3@'s start event, rather than letting automation boxes overlap, i-score will push @Box.3@ along the timeline. This makes i-score very useful to fine tune times of intervals between events while ensuring that the logical continuity of your scenario is at safe.
+You can also set constraints of variable/undefined time between boxes. When setting flexible constraints, you will be able to move automation boxes freely along the timeline as long as the order defined by the constraint is preserved. That is, if @Box.2@'s end event reaches @Box.3@'s start event, rather than letting automation boxes overlap, i-score will push @Box.3@ along the timeline. This makes i-score very useful to fine tune times of constraints between events while ensuring that the logical continuity of your scenario is at safe.
 
 <a href="./images/flexible-relation.png"><img src="./images/flexible-relation-detail.png" alt="flexible relation-detail" class="alignnone size-medium wp-image-593" /></a>
 
-Again, let's make a simple scenario with two boxes (with default names <code>Box.2</code> and <code>Box.3</code>) and let's draw a relation between <code>Box.2</code> end event and <code>Box.3</code> start event. We can make the interval flexible by double clicking it. You see that the vertical handle has changed to a duplet of dots. Now the interval between <code>Box.2</code> and <code>Box.3</code> has no pre-defined duration. You can move <code>Box.2</code> freely until its end event's date equals <code>Box.3</code>'s start event's date. i-score will then push <code>Box.3</code> along the timeline to keep the order preserved as shown in the video below.
+Again, let's make a simple scenario with two boxes (with default names <code>Box.2</code> and <code>Box.3</code>) and let's draw a relation between <code>Box.2</code> end event and <code>Box.3</code> start event. We can make the constraint flexible by double clicking it. You see that the vertical handle has changed to a duplet of dots. Now the constraint between <code>Box.2</code> and <code>Box.3</code> has no pre-defined duration. You can move <code>Box.2</code> freely until its end event's date equals <code>Box.3</code>'s start event's date. i-score will then push <code>Box.3</code> along the timeline to keep the order preserved as shown in the video below.
 
 <video width="720" height="405" src="./images/flexible-relation.mp4" preload="metadata" controls>Your video cannot be displayed inline. Click <a href="./images/flexible-relation.mp4">here</a></video>
 
-Flexible intervals can also be established from a box end event to a box's start event, from a box's start event to another box's start event, as well as from a box's end event to another box's end event, depending on how you need to align your automations and structure your scenario.
+Flexible constraints can also be established from a box end event to a box's start event, from a box's start event to another box's start event, as well as from a box's end event to another box's end event, depending on how you need to align your automations and structure your scenario.
 
-h3. Intervals and interactive events
+h3. constraints and interactive events
 
-Intervals can be used with both automation box types. However, using intervals with interactive boxes has different consequences when executing your score. Indeed, for non-interactive boxes, while intervals are useful for editing your scenario, they have no consequence on when the bounded automation will be played: these will play depending on their position on the timeline. However, using intervals with interactive events will condition when the automation gets available for triggering.
+constraints can be used with both automation box types. However, using constraints with interactive boxes has different consequences when executing your score. Indeed, for non-interactive boxes, while constraints are useful for editing your scenario, they have no consequence on when the bounded automation will be played: these will play depending on their position on the timeline. However, using constraints with interactive events will condition when the automation gets available for triggering.
 
-As an example, let's set an interval between the start event of a box named @Box.2@ and the start event of an interactive box named @Box.3@. If you start playing your scenario, you will notice that the trigger button turns red and the automation can not be triggered manually or using an OSC message until i-score playhead crosses start event of @Box.2@. Once i-score's playhead crosses the beginning of @Box.2@, @Box.3@'s trigger button will turn green, meaning that the automation can be triggered. See both behaviour as illustrated below.
+As an example, let's set an constraint between the start event of a box named @Box.2@ and the start event of an interactive box named @Box.3@. If you start playing your scenario, you will notice that the trigger button turns red and the automation can not be triggered manually or using an OSC message until i-score playhead crosses start event of @Box.2@. Once i-score's playhead crosses the beginning of @Box.2@, @Box.3@'s trigger button will turn green, meaning that the automation can be triggered. See both behaviour as illustrated below.
 
 <a href="./images/cond-triggering.png"><img src="./images/cond-triggering-detail.png" alt="Non intervalled triggering" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
 <a href="./images/cond-triggering2.png"><img src="./images/cond-triggering2-detail.png" alt="Non intervalled triggering" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
-You may however want to go a step further by preventing from triggering @Box.3@'s automation until a certain amount of time. For example, @Box.2@ may load some media files but you would like to introduce a delay before being able to trigger @Box.3@'s automation so you are sure that the loading is properly done. Such a delay can be introduced by clicking the angle of the interval connection and dragging your mouse until you reach the desired length. You will see that the interval connection now displays a full line up to the minimum bound you just defined.
+You may however want to go a step further by preventing from triggering @Box.3@'s automation until a certain amount of time. For example, @Box.2@ may load some media files but you would like to introduce a delay before being able to trigger @Box.3@'s automation so you are sure that the loading is properly done. Such a delay can be introduced by clicking the angle of the constraint connection and dragging your mouse until you reach the desired length. You will see that the constraint connection now displays a full line up to the minimum bound you just defined.
 
-<a href="./images/min-bound.png"><img src="./images/min-bound-detail.png" alt="Min bounded interval" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+<a href="./images/min-bound.png"><img src="./images/min-bound-detail.png" alt="Min bounded constraint" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
 On the opposite, you may want to force an automation to trigger after a certain amount of time. For example, if our @Box.2@ is reading an audio or video file that is to be faded out by the automation contained in @Box.3@, you will want to make sure that such a fade out is being made before the end of the file so it ends gracefully.
 
-Interval maximum bound can be added by double-clicking on the dotted part of the connection. This bring a maximum bound handle at the start event of the interactive box as illustrated below.
+constraint maximum bound can be added by double-clicking on the dotted part of the connection. This bring a maximum bound handle at the start event of the interactive box as illustrated below.
 
-<a href="./images/max-bound.png"><img src="./images/max-bound-detail.png" alt="Max bounded interval" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+<a href="./images/max-bound.png"><img src="./images/max-bound-detail.png" alt="Max bounded constraint" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
 You can now click the handle and drag it to the right until your reach the desired amount of time.
 
-<a href="./images/max-bound2.png"><img src="./images/max-bound2-detail.png" alt="Max bounded interval" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
+<a href="./images/max-bound2.png"><img src="./images/max-bound2-detail.png" alt="Max bounded constraint" width="300" height="259" class="aligncenter size-medium wp-image-614" /></a>
 
-bq. When editing your scenario, note that interval bounded with minimum and maximum values also affects moving interactive boxes along the timeline. Interactive boxes can be moved freely along the dotted part of the interval connection but will start pushing other linked boxes as you reach one of the bounds.
+bq. When editing your scenario, note that constraint bounded with minimum and maximum values also affects moving interactive boxes along the timeline. Interactive boxes can be moved freely along the dotted part of the constraint connection but will start pushing other linked boxes as you reach one of the bounds.
