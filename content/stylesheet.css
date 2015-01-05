@@ -380,7 +380,7 @@ h3+p, h4+p{
 
 code{
 	color: #2e2e2e;
-	background-color: #c9c9c9;
+/*	background-color: #c9c9c9;*/
 	font-family: "Courier New", Courier, mono;
 }
 blockquote{
