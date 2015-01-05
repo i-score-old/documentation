@@ -1,5 +1,5 @@
 ---
-title: Working constraints between events
+title: Setting constraints between events
 ---
 
 i-score allows to add to your timeline a number of automation boxes where/whenever you want. While writing your scenario, you are free to move boxes along the timeline, adjust their start and end point and structure you score as you need. However, as you add more boxes to the timeline, your score can grow in complexity and editing can become quite of a tedious work. In the score shown below, we can easily see that if we want to make our <code>eq1-fadein</code> automation a bit longer, this will cross the <code>all</code> automation box, add some conflict between the automation stored in <code>eq1-fadein</code> and the one stored in <code>all</code> automation box, misalign boxes together, and so on.
