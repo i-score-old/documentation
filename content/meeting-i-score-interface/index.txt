@@ -53,24 +53,24 @@ bq. /parent/topParameter.1
 
 Each parameter can be of 3 different access mode:
 
-- bidirectionnal: a distant application's parameter can be set and get from i-score
+- bidirectional: a distant application's parameter can be set and get from i-score
 - receiver: a distant application's parameter can be set from i-score
 - sender: a distant application's parameter can be get form i-score
 
 Note that in the Device explorer pane, receivers and senders are respectively displayed as light grey italic text and black italic text.
 
-<!-- For example, in the illustration below, the preset address under the audio node of the mediaPlayer device is a method allowing to recall a preset setting, while audio/track.1/input/soundfile/report is a message sent from the distant application when the sounfile being played reaches its end. -->
+<!-- For example, in the illustration below, the preset address under the audio node of the mediaPlayer device is a method allowing to recall a preset setting, while audio/track.1/input/soundfile/report is a message sent from the distant application when the soundfile being played reaches its end. -->
 The Device explorer pane provides two columns named "Start" and "End". For each parameter of the device, these columns display start and end values of an automation box. A double-click in the cell brings a textfield allowing to manually set start and/or end value.
 
 <a href="./images/startend-col.png"><img src="./images/startend-col-detail.png" width="300" height="150" class="aligncenter size-medium wp-image-557" /></a>
 
-Both Start and End columns are precedeed by a column named "v" containing checkboxes. These allow to set whether a parameter value will be respectively stored as a box's start or end.
+Both Start and End columns are preceded by a column named "v" containing checkboxes. These allow to set whether a parameter value will be respectively stored as a box's start or end.
 
 Finally, the column named "~" is use to set whether i-score will draw an interpolation between start and end values of an automation box.
 
 h4. Managing parameters tree
 
-Navigating through a great number of parameters can be tedious, hence the Device Explorer relies on multiple hierarchical selection/unselection.
+Navigating through a great number of parameters can be tedious, hence the Device Explorer relies on multiple hierarchical selection/deselection.
 
 When selecting a node in the tree of parameters, all nodes and parameters below that level will be automatically selected. For example, using the parameter addresses given above, selecting the node named @child.1@ will automatically select @/parent/child.1/myParameter@ as well as @/parent/child.1/anotherParameter@. Now if you check the start or end checkbox, all selected addresses' checkbox will be check as well. This makes it much easier to store a bunch of parameters' value in an event as illustrated below.
 
@@ -78,14 +78,14 @@ When selecting a node in the tree of parameters, all nodes and parameters below 
 
 h4. Advanced settings
 
-Some additionnal settings can be accessed by widening the Device explorer pane (when the Device explorer pane is attached to i-score main window, grab its right border and slide it to the right).
+Some additional settings can be accessed by widening the Device explorer pane (when the Device explorer pane is attached to i-score main window, grab its right border and slide it to the right).
 
 !./images/deviceexplorer-column.png(Device explorer advanced settings)!
 
-The first column named "=" sets whether repeted values will get filtered out (default) when playing an automation.
+The first column named "=" sets whether repeated values will get filtered out (default) when playing an automation.
 
 Column named "%" allows to define the rate at which values will get sent by i-score. Time between two values is given as milliseconds.
 
-"Access" column displays a symbol depending on the access mode of the parameter: bidirectionnal (@<->@), receiver (@->@) or sender (@<-@).
+"Access" column displays a symbol depending on the access mode of the parameter: bidirectional (@<->@), receiver (@->@) or sender (@<-@).
 
 Finally, "min" and "max" column display some optional minimum and maximum values for the parameter, as optionally defined in the xml file describing the parameters structure of your device (ie. for OSC devices) or as queried by i-score (ie. for Minuit devices).
