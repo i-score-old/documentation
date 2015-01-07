@@ -68,6 +68,14 @@ Both Start and End columns are precedeed by a column named "v" containing checkb
 
 Finally, the column named "~" is use to set whether i-score will draw an interpolation between start and end values of an automation box.
 
+h4. Managing parameters tree
+
+Navigating through a great number of parameters can be tedious, hence the Device Explorer relies on multiple hierarchical selection/unselection.
+
+When selecting a node in the tree of parameters, all nodes and parameters below that level will be automatically selected. For example, using the parameter addresses given above, selecting the node named @child.1@ will automatically select @/parent/child.1/myParameter@ as well as @/parent/child.1/anotherParameter@. Now if you check the start or end checkbox, all selected addresses' checkbox will be check as well. This makes it much easier to store a bunch of parameters' value in an event as illustrated below.
+
+!(nozoom)./images/explorerselection.gif!
+
 h4. Advanced settings
 
 Some additionnal settings can be accessed by widening the Device explorer pane (when the Device explorer pane is attached to i-score main window, grab its right border and slide it to the right).
