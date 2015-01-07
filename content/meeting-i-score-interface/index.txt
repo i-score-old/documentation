@@ -62,7 +62,7 @@ Note that in the Device explorer pane, receivers and senders are respectively di
 <!-- For example, in the illustration below, the preset address under the audio node of the mediaPlayer device is a method allowing to recall a preset setting, while audio/track.1/input/soundfile/report is a message sent from the distant application when the soundfile being played reaches its end. -->
 The Device explorer pane provides two columns named "Start" and "End". For each parameter of the device, these columns display start and end values of an automation box. A double-click in the cell brings a textfield allowing to manually set start and/or end value.
 
-<a href="./images/startend-col.png"><img src="./images/startend-col-detail.png" width="300" height="150" class="aligncenter size-medium wp-image-557" /></a>
+<a href="./images/startend-col.png"><img src="./images/startend-col-detail.png" class="aligncenter size-medium wp-image-557" /></a>
 
 Both Start and End columns are preceded by a column named "v" containing checkboxes. These allow to set whether a parameter value will be respectively stored as a box's start or end.
 
