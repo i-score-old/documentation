@@ -2,6 +2,8 @@
 title: Mouse and shortcuts
 ---
 
+h2. Mouse and shortcuts
+
 h3. General
 
 * *cmd+n/ctl+n:* Create a new scenario

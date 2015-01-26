@@ -2,7 +2,7 @@
 title: Global control of execution
 ---
 
-h3. Global control of execution
+h2. Global control of execution
 
 By default, i-score execution works in a similar way to most digital audio or video workstations: automation boxes are played as the playhead run across the timeline. In the screenshot below, you can see that each automation box has its own progress bar displaying where the playhead is in the automation.
 

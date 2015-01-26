@@ -2,6 +2,8 @@
 title: Event interactive triggering
 ---
 
+h2. Event interactive triggering
+
 Once you created a few automation boxes in i-score timeline, you can adjust their position and duration along the timeline. As with any standard DAW, automations are played as the playhead runs through them.
 
 However, when writing your interactive scenario, there are some cases where you want a specific automation to run at some point but cannot know when. For example, when writing the scenario of an interactive art installation, you know that an automation will start playing whenever a visitor enters the exhibition space or passes by a sensor, but you can not know when he will do so. To help with that, i-score let you set that an automation box will be triggered interactively. This brings the flexibility of cue-based systems. However, note that even if interactive automation boxes are dispatched along the timeline, they remain by default independant: their position on the timeline does not necesseraly imply a sequential order allowing parallel or non-linear triggering of events.

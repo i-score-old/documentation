@@ -2,6 +2,8 @@
 title: Controlling i-score via OSC
 ---
 
+h2. Controlling i-score via OSC
+
 This page is still under writing. In the mean time, here is a rough reference of OSC messages that can be used to remotely control i-score.
 
 <code>/Main:Start</code>: Launch i-score scenario execution

@@ -2,6 +2,8 @@
 title: Introduction
 ---
 
+h2. Introduction
+
 i-score is an interactive sequencer for intermedia creation. It allows to create flexible and interactive scenarios and is especially designed for live performance, art installation, museography or any context requiring a precise and interactive execution of timed events.
 
 h3. A sequencer for distributed media systems
