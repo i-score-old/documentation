@@ -1,0 +1,15 @@
+---
+title: Setting init state
+---
+
+h2. Setting init state
+
+When writing your scenario in i-score, you may want to set an init state for your whole devices setup ie. a default state before starting your performance.
+
+Rather than adding an automation box with only a start or end event, you can store a single state at the beginning of the whole scenario. One must select the whole scenario and assign it a namespace selection. To do so, click on the scenario name ("New scenario" in the illustration below) and select the addresses in the device explorer.
+
+!./images/selectNode.png(Selecting nodes)!
+
+When done, click the "start" checkbox. A dark shade is added at the beginning of the timeline, just like with any regular automation box.
+
+!./images/storingInit.png(Storing init state)!
