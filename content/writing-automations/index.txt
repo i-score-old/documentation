@@ -75,11 +75,6 @@ If you play our scenario, you should see the GUI being updated as i-score goes t
 
 You can now add more content to this box by selecting other parameters from the Device explorer and checking the start and end event boxes. Note that you can "select a group of parameters with a single click":http://i-score.org/documentation/meeting-i-score-interface.
 
-<blockquote class="tip">
-You may store an initial state for your scenario, for example, in order to set all of your parameters to a default state. To do so, click on your scenario name in the top bar, then check the start box as explained above.
-</blockquote>
-
-
 h3. Recording automations
 
 i-score allows to record incoming parameter's value into automation box. To do so, once selected the automation box to store value recording, navigate to the desired parameter address in the Device explorer and click on the interpolation check box while holding the cmd/ctl key down, respectively on Mac and Windows. You will see that the check box turned into a "recording" icon and the selected automation box is highlited in red. Now if you start playing your scenario, all incoming values while the box get played will be recorded as an automation.
