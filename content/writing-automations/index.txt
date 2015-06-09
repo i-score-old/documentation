@@ -35,7 +35,7 @@ Content added to a start or end event is symbolized in the box by a grey shade a
 
 !./images/boxshade.png(Box shade)!
 
-When entering both values, you that i-score automatically created an interpolation in the automation box. Also notice that the check box in the interpolation column got checked. You can now add other parameters values for this automation box or create other boxes in your scenario.
+When entering both values, you notice that i-score automatically created an interpolation in the automation box. Also notice that the check box in the interpolation column got checked. You can now add other parameters values for this automation box or create other boxes in your scenario.
 
 If you want to remove some parameters from a box, select the parameter in the Device explorer and toggle off the checkbox or press the backspace key.
 
