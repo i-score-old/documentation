@@ -4,7 +4,9 @@ title: Controlling i-score via OSC
 
 h2. Controlling i-score via OSC
 
-This page is still under writing. In the mean time, here is a rough reference of OSC messages that can be used to remotely control i-score.
+bq. This page is still under writing. In the mean time, here is a rough reference of OSC messages that can be used to remotely control i-score.
+
+i-score application can be controlled using OSC messages sent from a remote application. These messages should be sent to i-score through port 13580. In your remote application, set the IP address of the computer i-score is running on and port 13580.
 
 <code>/Main:Start</code>: Launch i-score scenario execution
 <code>/Main:Pause</code>: Pause i-score scenario execution
