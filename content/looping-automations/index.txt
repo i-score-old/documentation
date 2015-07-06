@@ -1,0 +1,29 @@
+---
+title: Looping automations
+---
+
+h2. Looping automations
+
+When writing your interactive scenarion, you may want to define some recuring automations. For example, when writing a scenario for an interactive art installation, it may be needed to set a "standby" mode that will play parts of your scenario as a loop until a specific event happens (ie. visitor enters the exhibition room).
+
+This can be done using i-score's automation loop feature. When creating an automation box in i-score timeline, you notice that it has a loop button that can toggle on or off looping function.
+
+<a href="./images/loop-button.png"><img src="./images/loop-button.png" alt="Loop button" class="aligncenter size-medium" /></a>
+
+Here we will write a looped automation controlling a track's main gain in our Max patch. As explained in previous tutorials, set some events and draw an automation curve as needed, then click on the loop button in the automation box.
+
+You see that the loop button turned white and that a constraint was added at the top of the automation box along with a trigger point.
+
+<a href="./images/looped-box.png"><img src="./images/looped-box-detail.png" alt="looped automation box" class="aligncenter size-medium" /></a>
+
+Now when you play your scenario, as expected the playhead will jump at the box's start event when reaching its end.
+
+We can now add a condition at the automation's end so the loop can be stoped (and the following events in the scenario will get played).
+
+Just as with regular trigger point, double-click on the arrow to bring to condition editor window. Here for the example, we will simply add a condition stating that when the play button in our sampler Max patch is set to off the loop should stop accordingly. Select the address you want to listen to then choose the "==" operator with 0 as value.
+
+<a href="./images/loop-condition.png"><img src="./images/loop-condition-detail.png" alt="looped condition" class="aligncenter size-medium" /></a>
+
+Now when you play your scenario, this automation will play in loop as long as the play button in the remote application is set to on.
+
+bq. While we used the loop feature on a single automation, note that this feature can be used on automation boxes containing sub-scenarios. This allows the looping of much longer and complex events suite.
