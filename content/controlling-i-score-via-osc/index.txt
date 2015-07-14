@@ -21,3 +21,5 @@ i-score application can be controlled using OSC messages sent from a remote appl
 <code>/'box name':Resume</code>: Resume automation box (named 'box name')
 <code>/'box name':End</code>: End automation box (named 'box name')
 <!-- <code>/'box name':speed</code>: Set speed of automation box (named 'box name') -->
+
+bq. Note that automation box may be in a sub-scenario. Hence these will be reached using their full hierarchical OSC address. ie. <code>/'parent box name'/'box name':Start</code>
